@@ -1146,6 +1146,30 @@ footer.footer {
               </ul>
             </div>
           </li>
+
+           <!-- Nickel Inspection Menu -->
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#NI" aria-expanded="false" aria-controls="jig-loading">
+                <i class="ti-eye menu-icon"></i>
+                <span class="menu-title">Nickel Inspection</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="NI">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'Nickel_Inspection' %}">Main Table</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'NI_Completed' %}">Completed Table</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'NI_Rejected' %}">Reject Table</a>
+                </li>
+                
+              </ul>
+            </div>
+          </li>
+
         </ul>
       </nav>
       <!-- partial -->

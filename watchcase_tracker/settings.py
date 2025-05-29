@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'JigLoading',
     'Input_Screening',
     'Brass_Qc',
+    'Nickel_Inspection',
     
     
 ]

@@ -34,6 +34,7 @@ urlpatterns = [
     path('input_screening/',include('Input_Screening.urls')),
     path('brass_qc/',include('Brass_Qc.urls')),
     path('jig-unloading/', include('Jig_Unloading.urls')),
+    path('nickel_inspection/', include('Nickel_Inspection.urls')),
 
 ]
 if settings.DEBUG:
