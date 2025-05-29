@@ -23,7 +23,7 @@
   top: 0;
   right: -100%;
   width: 100%;
-  max-width: 520px;
+  max-width: 650px;
   height: 100%;
   background: #ffffff;
   box-shadow: -4px 0 12px rgba(0, 0, 0, 0.15);
@@ -91,12 +91,13 @@
 .form-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
+  gap: 10px !important;
   margin-bottom: 20px;
 }
 .form-group {
   display: flex;
   flex-direction: column;
+  margin-bottom: 0.5rem !important;
 }
 .form-group label {
   font-size: 13px;
@@ -1812,7 +1813,7 @@ thead th {
     <!-- Header -->
     <div class="modal-header">
       <h3>
-        Jig Loading / Model No: <span class="highlight">1805xxb</span>
+        Jig Loading / Model No: <span class="highlight">1805</span>
       </h3>
       <a href="#" class="close-btn">&times;</a>
     </div>
@@ -1825,40 +1826,143 @@ thead th {
     </div>
 
     <!-- Form Fields -->
-    <div class="form-section">
+    <div class="form-section" style="grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 20px;">
       <div class="form-group">
-        <label>Jig QR ID</label>
-        <input type="text" placeholder="Enter Jig QR ID" />
+      <label>Jig QR ID</label>
+      <input type="text" placeholder="Enter Jig QR ID" />
       </div>
       <div class="form-group">
-        <label>Bath Type</label>
-        <input type="text" placeholder="Auto Fetch" disabled />
+      <label>Bath Type</label>
+      <input type="text" placeholder="Auto Fetch" disabled />
       </div>
       <div class="form-group">
-        <label>Faulty Slots</label>
-        <input type="text" placeholder="Enter Faulty Slots" />
+      <label>Faulty Slots</label>
+      <input type="text" placeholder="Enter Faulty Slots" />
       </div>
       <div class="form-group">
-        <label>Empty Slots</label>
-        <input type="text" placeholder="Auto Fetch" disabled />
+      <label>Empty Slots</label>
+      <input type="text" placeholder="Auto Fetch" disabled />
       </div>
       <div class="form-group">
-        <label>LOT Qty</label>
-        <input type="text" placeholder="Auto Fetch" disabled />
+      <label>LOT Qty</label>
+      <input type="text" placeholder="Auto Fetch" disabled />
       </div>
       <div class="form-group">
-        <label>Jig Capacity</label>
-        <input type="text" placeholder="Auto Fetch" disabled />
+      <label>Jig Capacity</label>
+      <input type="text" placeholder="Auto Fetch" disabled />
       </div>
     </div>
+    <!-- Tray Table Heading -->
+    <h4>No of Model Loaded:</h4>
+    <!-- Number of Model Loaded Slider -->
+    <div class="model-slider-wrapper" style="position: relative; margin-bottom: 20px;">
+      <!-- Previous Button -->
+      <button class="slider-btn prev-btn" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%); z-index: 2; background: rgba(0,0,0,0.5); border: none; color: #fff; padding: 8px; cursor: pointer;">&#10094;</button>
+      
+      <!-- Slider Container -->
+      <div class="model-slider-container" style="overflow: hidden; margin: 0 40px;">
+        <div class="model-slider" style="display: flex; transition: transform 0.3s ease;">
+          <!-- Model 1 -->
+          <div class="model-loaded-item" style="min-width: 200px; flex: 0 0 auto; margin-right: 16px; display: flex; align-items: center; border: 1px solid #ccc; border-radius: 8px; padding: 8px;">
+            <button class="model-image-btn" style="border: none; background: none; padding: 0; margin-right: 8px;">
+              <img src="{% static 'assets/images/imagePlaceholder.png' %}" alt="Model Image" style="width: 50px; height: 50px; object-fit: cover; border-radius: 4px;">
+            </button>
+            <div class="model-number" style="font-size: 16px; font-weight: bold;">Model No: 1805</div>
+          </div>
+          <!-- Model 2 -->
+          <div class="model-loaded-item" style="min-width: 200px; flex: 0 0 auto; margin-right: 16px; display: flex; align-items: center; border: 1px solid #ccc; border-radius: 8px; padding: 8px;">
+            <button class="model-image-btn" style="border: none; background: none; padding: 0; margin-right: 8px;">
+              <img src="{% static 'assets/images/imagePlaceholder.png' %}" alt="Model Image" style="width: 50px; height: 50px; object-fit: cover; border-radius: 4px;">
+            </button>
+            <div class="model-number" style="font-size: 16px; font-weight: bold;">Model No: 1904</div>
+          </div>
+          <!-- Model 3 -->
+          <div class="model-loaded-item" style="min-width: 200px; flex: 0 0 auto; margin-right: 16px; display: flex; align-items: center; border: 1px solid #ccc; border-radius: 8px; padding: 8px;">
+            <button class="model-image-btn" style="border: none; background: none; padding: 0; margin-right: 8px;">
+              <img src="{% static 'assets/images/imagePlaceholder.png' %}" alt="Model Image" style="width: 50px; height: 50px; object-fit: cover; border-radius: 4px;">
+            </button>
+            <div class="model-number" style="font-size: 16px; font-weight: bold;">Model No: 2001</div>
+          </div>
+          <!-- Model 4 -->
+          <div class="model-loaded-item" style="min-width: 200px; flex: 0 0 auto; margin-right: 16px; display: flex; align-items: center; border: 1px solid #ccc; border-radius: 8px; padding: 8px;">
+            <button class="model-image-btn" style="border: none; background: none; padding: 0; margin-right: 8px;">
+              <img src="{% static 'assets/images/imagePlaceholder.png' %}" alt="Model Image" style="width: 50px; height: 50px; object-fit: cover; border-radius: 4px;">
+            </button>
+            <div class="model-number" style="font-size: 16px; font-weight: bold;">Model No: 1805</div>
+          </div>
+          <!-- Model 5 -->
+          <div class="model-loaded-item" style="min-width: 200px; flex: 0 0 auto; margin-right: 16px; display: flex; align-items: center; border: 1px solid #ccc; border-radius: 8px; padding: 8px;">
+            <button class="model-image-btn" style="border: none; background: none; padding: 0; margin-right: 8px;">
+              <img src="{% static 'assets/images/imagePlaceholder.png' %}" alt="Model Image" style="width: 50px; height: 50px; object-fit: cover; border-radius: 4px;">
+            </button>
+            <div class="model-number" style="font-size: 16px; font-weight: bold;">Model No: 1904</div>
+          </div>
+          <!-- Model 6 -->
+          <div class="model-loaded-item" style="min-width: 200px; flex: 0 0 auto; margin-right: 16px; display: flex; align-items: center; border: 1px solid #ccc; border-radius: 8px; padding: 8px;">
+            <button class="model-image-btn" style="border: none; background: none; padding: 0; margin-right: 8px;">
+              <img src="{% static 'assets/images/imagePlaceholder.png' %}" alt="Model Image" style="width: 50px; height: 50px; object-fit: cover; border-radius: 4px;">
+            </button>
+            <div class="model-number" style="font-size: 16px; font-weight: bold;">Model No: 2001</div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Next Button -->
+      <button class="slider-btn next-btn" style="position: absolute; right: 0; top: 50%; transform: translateY(-50%); z-index: 2; background: rgba(0,0,0,0.5); border: none; color: #fff; padding: 8px; cursor: pointer;">&#10095;</button>
+    </div>
 
-    <!-- Tray Table -->
+    <script nonce="{{ csp_nonce }}">
+    (function() {
+      const slider = document.querySelector('.model-slider');
+      const prevBtn = document.querySelector('.prev-btn');
+      const nextBtn = document.querySelector('.next-btn');
+      let sliderIndex = 0;
+      const itemWidth = document.querySelector('.model-loaded-item').offsetWidth + 16; // includes margin
+      const totalItems = slider.children.length;
+
+      function updateSlider() {
+        const containerWidth = document.querySelector('.model-slider-container').offsetWidth;
+        const visibleItems = Math.floor(containerWidth / itemWidth);
+        prevBtn.style.display = sliderIndex > 0 ? 'block' : 'none';
+        nextBtn.style.display = (sliderIndex + visibleItems < totalItems) ? 'block' : 'none';
+      }
+
+      prevBtn.addEventListener('click', function() {
+        sliderIndex = Math.max(sliderIndex - 1, 0);
+        slider.style.transform = 'translateX(' + (-sliderIndex * itemWidth) + 'px)';
+        updateSlider();
+      });
+
+      nextBtn.addEventListener('click', function() {
+        sliderIndex = Math.min(sliderIndex + 1, totalItems - 1);
+        slider.style.transform = 'translateX(' + (-sliderIndex * itemWidth) + 'px)';
+        updateSlider();
+      });
+
+      window.addEventListener('resize', updateSlider);
+      updateSlider();
+    })();
+    </script>
+    <!-- Tray Table Heading -->
+    <h4>De-link Tray:</h4>
     <div class="tray-table">
-      <div>S.No</div><div>Tray ID</div><div>Tray Quantity</div>
-      <div>1 (Top Tray)</div><div>1805 - Tray ID</div><div>12</div>
-      <div>2</div><div>1805 - Tray ID</div><div>12</div>
-      <div>3</div><div>1904 - Tray ID</div><div>10</div>
-      <div>4</div><div>1904 - Tray ID</div><div>10</div>
+      <div>S.No</div>
+      <div>Tray ID</div>
+      <div>Tray Quantity</div>
+      <div>1 (Top Tray)</div>
+      <div><input type="text" value="1805 - Tray ID" style="width:100%; border:none; background:transparent;" /></div>
+      <div style="padding: 10px; text-align: center;">12         
+        <img src="{% static 'assets/icons/edit1.png' %}" alt="Edit" style="width: 20px;margin-left: 4px;height: auto;vertical-align: middle;margin-top: -6px;"/>
+      </div>
+      <div>2</div>
+      <div><input type="text" value="1805 - Tray ID" style="width:100%; border:none; background:transparent;" /></div>
+      <div>12</div>
+      <div>3</div>
+      <div><input type="text" value="1904 - Tray ID" style="width:100%; border:none; background:transparent;" /></div>
+      <div>10</div>
+      <div>4</div>
+      <div><input type="text" value="1904 - Tray ID" style="width:100%; border:none; background:transparent;" /></div>
+      <div>10</div>
     </div>
 
     <!-- Footer Buttons -->

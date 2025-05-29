@@ -501,7 +501,7 @@ thead th {
   }
 </style>
 <div class="content-wrapper">
-  <h5 class="text-left mt-0 mb-3">Input Screening/ Completed Table</h5>
+  <h5 class="text-left mt-0 mb-3">Jig Loading / Completed Table</h5>
   <div class="row">
     <div class="col-12 grid-margin stretch-card">
       <div class="card">
@@ -613,37 +613,10 @@ thead th {
                     <td>Normal 16</td>
                     <td>10</td>
                     <td>
-                      <div style="display: flex; align-items: center; gap: 8px">
-                        <span style="min-width: 30px; text-align: right"
-                          >150</span
-                        >
-                        <input
-                          type="checkbox"
-                          style="width: 15px; height: 15px"
-                        />
-                        <input
-                          type="text"
-                          value="20"
-                          style="
-                            width: 60px;
-                            padding: 2px 4px;
-                            border: 1px solid #ccc;
-                            border-radius: 4px;
-                          "
-                        />
-                      </div>
+                      150
                     </td>
                     <td>
-                      <input
-                        type="text"
-                        value="130"
-                        style="
-                          width: 60px;
-                          padding: 2px 4px;
-                          border: 1px solid #ccc;
-                          border-radius: 4px;
-                        "
-                      />
+                      30
                     </td>
                     <td>
                         130
@@ -691,19 +664,11 @@ thead th {
                       </div>
                     </td>
                     <td>
-                        <span title="Edit (Disabled)">
-                        <img
-                          src="{% static 'assets/icons/edit1.png' %}"
-                          alt="Edit"
-                          style="width: 20px; margin-right: 8px; height: auto; opacity: 0.5; pointer-events: none;"
-                        />
+                         <span style="opacity:0.5; pointer-events:none; display:inline-block;">
+                        <img src="{% static 'assets/icons/edit1.png' %}" alt="Edit Disabled" style="width: 20px; margin-right: 8px; height: auto; filter: grayscale(1) opacity(0.5);" />
                         </span>
-                        <span title="Delete (Disabled)">
-                        <img
-                          src="{% static 'assets/icons/bin.png' %}"
-                          alt="Delete"
-                          style="width: 20px; margin-right: 8px; height: auto; opacity: 0.5; pointer-events: none;"
-                        />
+                        <span style="opacity:0.5; pointer-events:none; display:inline-block;">
+                        <img src="{% static 'assets/icons/bin.png' %}" alt="Delete Disabled" style="width: 20px; height: auto; filter: grayscale(1) opacity(0.5);" />
                         </span>
 
                       <a
@@ -752,7 +717,7 @@ thead th {
                           padding: 0.3rem;
                         "
                       >
-                        Jig Loading
+                        Jig Loading 
                       </div>
                     </td>
                     <td>
@@ -872,39 +837,10 @@ thead th {
                     <td>Jumbo 14</td>
                     <td>10</td>
                     <td>
-                      <div style="display: flex; align-items: center; gap: 8px">
-                        <span style="min-width: 30px; text-align: right"
-                          >50</span
-                        >
-                        <input
-                          type="checkbox"
-                          style="width: 15px; height: 15px"
-                          disabled
-                        />
-                        <input
-                          type="text"
-                          value="-"
-                          style="
-                            width: 60px;
-                            padding: 2px 4px;
-                            border: 1px solid #ccc;
-                            border-radius: 4px;
-                          "
-                          disabled
-                        />
-                      </div>
+                      60
                     </td>
                     <td>
-                      <input
-                        type="text"
-                        value="-"
-                        style="
-                          width: 60px;
-                          padding: 2px 4px;
-                          border: 1px solid #ccc;
-                          border-radius: 4px;
-                        "
-                      />
+                      30
                     </td>
                     <td>
                     40
@@ -950,20 +886,12 @@ thead th {
                       </div>
                     </td>
                     <td>
-                      <a href="#" title="Edit">
-                        <img
-                          src="{% static 'assets/icons/edit1.png' %}"
-                          alt="Edit"
-                          style="width: 20px; margin-right: 8px; height: auto"
-                        />
-                      </a>
-                      <a href="#" title="Delete">
-                        <img
-                          src="{% static 'assets/icons/bin.png' %}"
-                          alt="Delete"
-                          style="width: 20px; margin-right: 8px; height: auto"
-                        />
-                      </a>
+                       <span style="opacity:0.5; pointer-events:none; display:inline-block;">
+                        <img src="{% static 'assets/icons/edit1.png' %}" alt="Edit Disabled" style="width: 20px; margin-right: 8px; height: auto; filter: grayscale(1) opacity(0.5);" />
+                        </span>
+                        <span style="opacity:0.5; pointer-events:none; display:inline-block;">
+                        <img src="{% static 'assets/icons/bin.png' %}" alt="Delete Disabled" style="width: 20px; height: auto; filter: grayscale(1) opacity(0.5);" />
+                        </span>
                      
                       
                                            <!-- Eye icon to view submitted "Tray Scan Table" -->
@@ -979,15 +907,15 @@ thead th {
                       <div
                         class="d-inline-block px-3 fw-semibold text-center rounded-pill"
                         style="
-                          border: 2px solid #4997ac;
-                          background-color: #d1f2f3;
-                          color: #03425d;
+                          border: 2px solid #0d5d17;
+                          background-color: #c5f9c2;
+                          color: #2f801b;
                           font-size: clamp(0.3rem, 2vw, 0.875rem);
                           white-space: nowrap;
                           padding: 0.3rem;
                         "
                       >
-                        On-Hold
+                        Released
                       </div>
                     </td>
                     <td>
@@ -1002,7 +930,7 @@ thead th {
                           padding: 0.3rem;
                         "
                       >
-                        Jig Loading
+                        Jig Loading 
                       </div>
                     </td>
                     <td>
@@ -1124,37 +1052,10 @@ thead th {
                     <td>Jumbo 14</td>
                     <td>10</td>
                     <td>
-                      <div style="display: flex; align-items: center; gap: 8px">
-                        <span style="min-width: 30px; text-align: right"
-                          >45</span
-                        >
-                        <input
-                          type="checkbox"
-                          style="width: 15px; height: 15px"
-                        />
-                        <input
-                          type="text"
-                          value="50"
-                          style="
-                            width: 60px;
-                            padding: 2px 4px;
-                            border: 1px solid #ccc;
-                            border-radius: 4px;
-                          "
-                        />
-                      </div>
+                      90
                     </td>
                     <td>
-                      <input
-                        type="text"
-                        value="50"
-                        style="
-                          width: 60px;
-                          padding: 2px 4px;
-                          border: 1px solid #ccc;
-                          border-radius: 4px;
-                        "
-                      />
+                      10
                     </td>
                     <td>
                       35
@@ -1202,20 +1103,12 @@ thead th {
                       </div>
                     </td>
                     <td>
-                      <a href="#" title="Edit">
-                        <img
-                          src="{% static 'assets/icons/edit1.png' %}"
-                          alt="Edit"
-                          style="width: 20px; margin-right: 8px; height: auto"
-                        />
-                      </a>
-                      <a href="#" title="Delete">
-                        <img
-                          src="{% static 'assets/icons/bin.png' %}"
-                          alt="Delete"
-                          style="width: 20px; margin-right: 8px; height: auto"
-                        />
-                      </a>
+                      <span style="opacity:0.5; pointer-events:none; display:inline-block;">
+                        <img src="{% static 'assets/icons/edit1.png' %}" alt="Edit Disabled" style="width: 20px; margin-right: 8px; height: auto; filter: grayscale(1) opacity(0.5);" />
+                        </span>
+                        <span style="opacity:0.5; pointer-events:none; display:inline-block;">
+                        <img src="{% static 'assets/icons/bin.png' %}" alt="Delete Disabled" style="width: 20px; height: auto; filter: grayscale(1) opacity(0.5);" />
+                        </span>
                         
                       <!-- Eye icon to view submitted "Tray Scan Table" -->
                         <a href="#viewModal">
@@ -1240,7 +1133,7 @@ thead th {
                         "
                         >
                           Yet To Release
-                        </div>
+                      </div>
                     </td>
                     <td>
                       <div
@@ -1254,7 +1147,7 @@ thead th {
                           padding: 0.3rem;
                         "
                       >
-                        Jig Loading
+                        Jig Loading 
                       </div>
                     </td>
                     <td>
@@ -1375,39 +1268,10 @@ thead th {
                     <td>Jumbo 14</td>
                     <td>10</td>
                     <td>
-                      <div style="display: flex; align-items: center; gap: 8px">
-                        <span style="min-width: 30px; text-align: right"
-                          >50</span
-                        >
-                        <input
-                          type="checkbox"
-                          style="width: 15px; height: 15px"
-                          disabled
-                        />
-                        <input
-                          type="text"
-                          value="-"
-                          style="
-                            width: 60px;
-                            padding: 2px 4px;
-                            border: 1px solid #ccc;
-                            border-radius: 4px;
-                          "
-                          disabled
-                        />
-                      </div>
+                      110
                     </td>
                     <td>
-                      <input
-                        type="text"
-                        value="-"
-                        style="
-                          width: 60px;
-                          padding: 2px 4px;
-                          border: 1px solid #ccc;
-                          border-radius: 4px;
-                        "
-                      />
+                      20
                     </td>
                     <td> 50 </td>
                     <td>
@@ -1452,20 +1316,12 @@ thead th {
                       </div>
                     </td>
                     <td>
-                      <a href="#" title="Edit">
-                        <img
-                          src="{% static 'assets/icons/edit1.png' %}"
-                          alt="Edit"
-                          style="width: 20px; margin-right: 8px; height: auto"
-                        />
-                      </a>
-                      <a href="#" title="Delete">
-                        <img
-                          src="{% static 'assets/icons/bin.png' %}"
-                          alt="Delete"
-                          style="width: 20px; margin-right: 8px; height: auto"
-                        />
-                      </a>
+                       <span style="opacity:0.5; pointer-events:none; display:inline-block;">
+                        <img src="{% static 'assets/icons/edit1.png' %}" alt="Edit Disabled" style="width: 20px; margin-right: 8px; height: auto; filter: grayscale(1) opacity(0.5);" />
+                        </span>
+                        <span style="opacity:0.5; pointer-events:none; display:inline-block;">
+                        <img src="{% static 'assets/icons/bin.png' %}" alt="Delete Disabled" style="width: 20px; height: auto; filter: grayscale(1) opacity(0.5);" />
+                        </span>
                       
                         <!-- Eye icon to view submitted "Tray Scan Table" -->
                         <a href="#viewModal">
@@ -1477,19 +1333,19 @@ thead th {
                       </a>
                     </td>
                     <td>
-                      <div
+                       <div
                           class="d-inline-block px-3 fw-semibold text-center rounded-pill"
+                         
                           style="
-                          border: 1px solid #a6a6a6;
-                          background-color: #dcdada;
-                          color: #505050;
+                          border: 2px solid #0d5d17;
+                            background-color: #c5f9c2;
+                            color: #2f801b;
                           font-size: 12px;
                           white-space: nowrap;
                           padding: 6px;
-                          
                         "
                         >
-                          Yet to Start
+                          Yet To Release
                       </div>
                     </td>
                     <td>
@@ -1504,7 +1360,7 @@ thead th {
                           padding: 0.3rem;
                         "
                       >
-                        Jig Loading
+                        Jig Loading 
                       </div>
                     </td>
                     <td>
@@ -1655,7 +1511,7 @@ thead th {
                         <!-- Redo icon for clearing "tray ID" -->
                         <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;">
                            <h5 style="text-align: center; margin: 0; flex: 1; font-weight: 600; color:#595959">
-                              Input Screening- Tray Scan
+                              Jig Loading - Tray Scan
                            </h5>
                            <!-- Tray Validate Button (NEW) -->
                            <button id="trayValidateBtn" type="button" style="display: flex; align-items: center; gap: 6px; background: #f5faff; border: 1px solid #028084; color: #028084; border-radius: 20px; padding: 4px 14px; font-size: 13px; font-weight: 500; cursor: pointer;">
@@ -1735,7 +1591,7 @@ thead th {
                   <span id="closeTrayScanModal" class="tray-scan-close"
                     >&times;</span
                   >
-                  <h3>Tray Scan Details:</h3><p>Input Screening/ Model No. / Rejection Window </p>
+                  <h3>Tray Scan Details:</h3><p>Jig Loading / Model No. / Rejection Window </p>
                   <div id="trayScanDetails">
                     <!-- Dynamic content will be loaded here -->
                   </div>
@@ -1779,7 +1635,7 @@ thead th {
                   <!-- Redo icon for clearing "tray ID" -->
                  <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px;">
                     <h5 style="text-align: center; margin: 0; flex: 1; font-weight: 600; color:#595959">
-                      Input Screening- Accepted case tray scan table
+                      Jig Loading - Accepted case tray scan table
                     </h5>
                     <img
                       src="{% static 'assets/icons/redo2.png' %}"

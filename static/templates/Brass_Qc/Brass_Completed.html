@@ -499,7 +499,7 @@ thead th {
   }
 </style>
 <div class="content-wrapper">
-  <h5 class="text-left mt-0 mb-3">Brass Qc / Pick Table</h5>
+  <h5 class="text-left mt-0 mb-3">Brass Qc / Completed Table</h5>
   <div class="row">
     <div class="col-12 grid-margin stretch-card">
       <div class="card">
@@ -609,11 +609,7 @@ thead th {
                     <td>Normal 16</td>
                     <td>10</td>
                     <td>
-                      <div style="display: flex; align-items: center; gap: 8px">
-                        <span style="min-width: 30px; text-align: right"
-                          >150</span
-                        >
-                      </div>
+                     150
                     </td>
                     <td>
                       130
@@ -664,20 +660,12 @@ thead th {
                       </div>
                     </td>
                     <td>
-                      <a href="#" title="Edit">
-                        <img
-                          src="{% static 'assets/icons/edit1.png' %}"
-                          alt="Edit"
-                          style="width: 20px; margin-right: 8px; height: auto"
-                        />
-                      </a>
-                      <a href="#" title="Delete">
-                        <img
-                          src="{% static 'assets/icons/bin.png' %}"
-                          alt="Delete"
-                          style="width: 20px; margin-right: 8px; height: auto"
-                        />
-                      </a>
+                        <span style="opacity:0.5; pointer-events:none; display:inline-block;">
+                        <img src="{% static 'assets/icons/edit1.png' %}" alt="Edit Disabled" style="width: 20px; margin-right: 8px; height: auto; filter: grayscale(1) opacity(0.5);" />
+                        </span>
+                        <span style="opacity:0.5; pointer-events:none; display:inline-block;">
+                        <img src="{% static 'assets/icons/bin.png' %}" alt="Delete Disabled" style="width: 20px; height: auto; filter: grayscale(1) opacity(0.5);" />
+                        </span>
                       <button
                         type="button"
                         class="btn btn-social-icon-text btn-twitter"
@@ -685,13 +673,7 @@ thead th {
                       >
                         <i class="fa fa-check-circle"></i>Accepted
                       </button>
-                      <button
-                        type="button"
-                        class="btn btn-social-icon-text btn-youtube"
-                        style="background-color: #9e9e9e"
-                      >
-                        <i class="fa fa-close" style="background-color: #6b6a6a"></i>Reject
-                      </button>
+                      
                       <a
                               href="#"
                               title="View"
@@ -856,39 +838,10 @@ thead th {
                     <td>Jumbo 14</td>
                     <td>10</td>
                     <td>
-                      <div style="display: flex; align-items: center; gap: 8px">
-                        <span style="min-width: 30px; text-align: right"
-                          >50</span
-                        >
-                        <input
-                          type="checkbox"
-                          style="width: 15px; height: 15px"
-                          disabled
-                        />
-                        <input
-                          type="text"
-                          value="-"
-                          style="
-                            width: 60px;
-                            padding: 2px 4px;
-                            border: 1px solid #ccc;
-                            border-radius: 4px;
-                          "
-                          disabled
-                        />
-                      </div>
+                      50
                     </td>
                     <td>
-                      <input
-                        type="text"
-                        value="-"
-                        style="
-                          width: 60px;
-                          padding: 2px 4px;
-                          border: 1px solid #ccc;
-                          border-radius: 4px;
-                        "
-                      />
+                      20
                     </td>
                     <td>
                     40
@@ -904,7 +857,7 @@ thead th {
                           style="
                             width: 20px;
                             height: 20px;
-                            background-color: #c3c2c2;
+                            background-color: #0c8249;
                             color: white;
                             font-weight: bold;
                             line-height: 20px;
@@ -921,7 +874,7 @@ thead th {
                           style="
                             width: 20px;
                             height: 20px;
-                            background-color: #c3c2c2;
+                            background-color: #0c8249;
                             color: white;
                             font-weight: bold;
                             line-height: 20px;
@@ -935,32 +888,17 @@ thead th {
                       </div>
                     </td>
                     <td>
-                      <a href="#" title="Edit">
-                        <img
-                          src="{% static 'assets/icons/edit1.png' %}"
-                          alt="Edit"
-                          style="width: 20px; margin-right: 8px; height: auto"
-                        />
-                      </a>
-                      <a href="#" title="Delete">
-                        <img
-                          src="{% static 'assets/icons/bin.png' %}"
-                          alt="Delete"
-                          style="width: 20px; margin-right: 8px; height: auto"
-                        />
-                      </a>
-                      <button
-                        type="button"
-                        class="btn btn-social-icon-text btn-twitter"
-                        style="background-color: #66bb6a"
-                      >
-                        <i class="fa fa-check-circle"></i>Accept
-                      </button>
+                    <span style="opacity:0.5; pointer-events:none; display:inline-block;">
+                      <img src="{% static 'assets/icons/edit1.png' %}" alt="Edit Disabled" style="width: 20px; margin-right: 8px; height: auto; filter: grayscale(1) opacity(0.5);" />
+                    </span>
+                    <span style="opacity:0.5; pointer-events:none; display:inline-block;">
+                      <img src="{% static 'assets/icons/bin.png' %}" alt="Delete Disabled" style="width: 20px; height: auto; filter: grayscale(1) opacity(0.5);" />
+                    </span>
                       <button
                         type="button"
                         class="btn btn-social-icon-text btn-youtube tray-scan-btn"
                       >
-                        <i class="fa fa-close"></i>Reject
+                        <i class="fa fa-close"></i>Rejected
                       </button>
                                            <!-- Eye icon to view submitted "Tray Scan Table" -->
                         <a href="#viewModal">
@@ -971,19 +909,19 @@ thead th {
                             />
                         </a>
                     </td>
-                    <td>
+                   <td>
                       <div
                         class="d-inline-block px-3 fw-semibold text-center rounded-pill"
                         style="
-                          border: 2px solid #4997ac;
-                          background-color: #d1f2f3;
-                          color: #03425d;
+                          border: 2px solid #0d5d17;
+                          background-color: #c5f9c2;
+                          color: #2f801b;
                           font-size: clamp(0.3rem, 2vw, 0.875rem);
                           white-space: nowrap;
                           padding: 0.3rem;
                         "
                       >
-                        On-Hold
+                        Released
                       </div>
                     </td>
                     <td>
@@ -1118,37 +1056,10 @@ thead th {
                     <td>Jumbo 14</td>
                     <td>10</td>
                     <td>
-                      <div style="display: flex; align-items: center; gap: 8px">
-                        <span style="min-width: 30px; text-align: right"
-                          >45</span
-                        >
-                        <input
-                          type="checkbox"
-                          style="width: 15px; height: 15px"
-                        />
-                        <input
-                          type="text"
-                          value="50"
-                          style="
-                            width: 60px;
-                            padding: 2px 4px;
-                            border: 1px solid #ccc;
-                            border-radius: 4px;
-                          "
-                        />
-                      </div>
+                      130
                     </td>
                     <td>
-                      <input
-                        type="text"
-                        value="50"
-                        style="
-                          width: 60px;
-                          padding: 2px 4px;
-                          border: 1px solid #ccc;
-                          border-radius: 4px;
-                        "
-                      />
+                       20
                     </td>
                     <td>
                       35
@@ -1181,7 +1092,7 @@ thead th {
                           style="
                             width: 20px;
                             height: 20px;
-                            background-color: #c3c2c2;
+                            background-color: #0c8249;
                             color: white;
                             font-weight: bold;
                             line-height: 20px;
@@ -1196,31 +1107,13 @@ thead th {
                       </div>
                     </td>
                     <td>
-                      <a href="#" title="Edit">
-                        <img
-                          src="{% static 'assets/icons/edit1.png' %}"
-                          alt="Edit"
-                          style="width: 20px; margin-right: 8px; height: auto"
-                        />
-                      </a>
-                      <a href="#" title="Delete">
-                        <img
-                          src="{% static 'assets/icons/bin.png' %}"
-                          alt="Delete"
-                          style="width: 20px; margin-right: 8px; height: auto"
-                        />
-                      </a>
-                      <button
-                        type="button"
-                        class="btn btn-social-icon-text btn-twitter"
-                        style="background-color: #9e9e9e"
-                      >
-                        <i
-                          class="fa fa-check-circle"
-                          style="background-color: #6b6a6a"
-                        ></i
-                        >Accept
-                      </button>
+                        <span style="opacity:0.5; pointer-events:none; display:inline-block;">
+                        <img src="{% static 'assets/icons/edit1.png' %}" alt="Edit Disabled" style="width: 20px; margin-right: 8px; height: auto; filter: grayscale(1) opacity(0.5);" />
+                        </span>
+                        <span style="opacity:0.5; pointer-events:none; display:inline-block;">
+                        <img src="{% static 'assets/icons/bin.png' %}" alt="Delete Disabled" style="width: 20px; height: auto; filter: grayscale(1) opacity(0.5);" />
+                        </span>
+                      
                       <button
                         type="button"
                         class="btn btn-social-icon-text btn-youtube"
@@ -1244,7 +1137,7 @@ thead th {
                           border: 2px solid #0d5d17;
                             background-color: #c5f9c2;
                             color: #2f801b;
-                          font-size: 12px;
+                          font-size: 11px;
                           white-space: nowrap;
                           padding: 6px;
                         "
@@ -1385,46 +1278,17 @@ thead th {
                     <td>Jumbo 14</td>
                     <td>10</td>
                     <td>
-                      <div style="display: flex; align-items: center; gap: 8px">
-                        <span style="min-width: 30px; text-align: right"
-                          >50</span
-                        >
-                        <input
-                          type="checkbox"
-                          style="width: 15px; height: 15px"
-                          disabled
-                        />
-                        <input
-                          type="text"
-                          value="-"
-                          style="
-                            width: 60px;
-                            padding: 2px 4px;
-                            border: 1px solid #ccc;
-                            border-radius: 4px;
-                          "
-                          disabled
-                        />
-                      </div>
+                      200
                     </td>
                     <td>
-                      <input
-                        type="text"
-                        value="-"
-                        style="
-                          width: 60px;
-                          padding: 2px 4px;
-                          border: 1px solid #ccc;
-                          border-radius: 4px;
-                        "
-                      />
+                        20
                     </td>
                     <td> 50 </td>
                     <td>
                      40
                     </td>
                     <td>
-                      <div class="d-flex">
+                                            <div class="d-flex">
                         <div
                           title="Tray Scan"
                           class="d-flex align-items-center justify-content-center rounded-circle ms-1"
@@ -1463,33 +1327,20 @@ thead th {
                       </div>
                     </td>
                     <td>
-                      <a href="#" title="Edit">
-                        <img
-                          src="{% static 'assets/icons/edit1.png' %}"
-                          alt="Edit"
-                          style="width: 20px; margin-right: 8px; height: auto"
-                        />
-                      </a>
-                      <a href="#" title="Delete">
-                        <img
-                          src="{% static 'assets/icons/bin.png' %}"
-                          alt="Delete"
-                          style="width: 20px; margin-right: 8px; height: auto"
-                        />
-                      </a>
+                      <span style="opacity:0.5; pointer-events:none; display:inline-block;">
+                      <img src="{% static 'assets/icons/edit1.png' %}" alt="Edit Disabled" style="width: 20px; margin-right: 8px; height: auto; filter: grayscale(1) opacity(0.5);" />
+                    </span>
+                    <span style="opacity:0.5; pointer-events:none; display:inline-block;">
+                      <img src="{% static 'assets/icons/bin.png' %}" alt="Delete Disabled" style="width: 20px; height: auto; filter: grayscale(1) opacity(0.5);" />
+                    </span>
                       <button
                         type="button"
                         class="btn btn-social-icon-text btn-twitter"
                         style="background-color: #66bb6a"
                       >
-                        <i class="fa fa-check-circle"></i>Accept
+                        <i class="fa fa-check-circle"></i>Accepted
                       </button>
-                      <button
-                        type="button"
-                        class="btn btn-social-icon-text btn-youtube tray-scan-btn"
-                      >
-                        <i class="fa fa-close"></i>Reject
-                      </button>
+                     
                                            <!-- Eye icon to view submitted "Tray Scan Table" -->
                         <a href="#viewModal">
                           <img
@@ -1500,20 +1351,20 @@ thead th {
                       </a>
                     </td>
                     <td>
-                      <div
-                          class="d-inline-block px-3 fw-semibold text-center rounded-pill"
-                          style="
-                          border: 1px solid #a6a6a6;
-                          background-color: #dcdada;
-                          color: #505050;
-                          font-size: 12px;
-                          white-space: nowrap;
-                          padding: 6px;
-                          
-                        "
-                        >
-                          Yet to Start
-                      </div>
+                        <div
+                            class="d-inline-block px-3 fw-semibold text-center rounded-pill"
+                            
+                            style="
+                            border: 2px solid #0d5d17;
+                                background-color: #c5f9c2;
+                                color: #2f801b;
+                            font-size: 11px;
+                            white-space: nowrap;
+                            padding: 6px;
+                            "
+                            >
+                            Yet To Release
+                        </div>
                     </td>
                     <td>
                       <div
