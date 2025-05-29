@@ -1050,6 +1050,24 @@ footer.footer {
               </ul>
             </div>
           </li>
+           <!-- Jig Unloading Menu -->
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="jig-loading">
+              <i class="ti-truck menu-icon"></i>
+              <span class="menu-title">Jig Unloading</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="tables">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'Jig_Unloading_Main' %}">Main Table</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'JigUnloading_Completedtable' %}">Completed Table</a>
+                </li>
+              </ul>
+            </div>
+          </li>
           <!-- Recovery Onboard Menu -->
                       <li class="nav-item">
                         <a class="nav-link" data-bs-toggle="collapse" href="#recovery-onboard" aria-expanded="false" aria-controls="recovery-onboard">
@@ -1084,6 +1102,9 @@ footer.footer {
                   <a class="nav-link" href="{% url 'Recovery_IS_PickTable' %}">Pick Table</a>
                 </li>
                 <li class="nav-item"> 
+                  <a class="nav-link" href="{% url 'Recovery_IS_Completed_Table' %}">Completed Table</a>
+                </li>
+                <li class="nav-item"> 
                   <a class="nav-link" href="{% url 'Recovery_IS_AcceptTable' %}">Accept</a>
                 </li>
                 <li class="nav-item">
@@ -1113,11 +1134,6 @@ footer.footer {
               </ul>
             </div>
           </li>
-
-
-
-
-
         </ul>
       </nav>
       <!-- partial -->

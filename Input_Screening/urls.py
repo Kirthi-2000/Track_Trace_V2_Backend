@@ -9,6 +9,7 @@ urlpatterns = [
     
     # Recovery IS URLs
     path('Recovery_IS_PickTable/', Recovery_IS_PickTable.as_view(), name='Recovery_IS_PickTable'),
+    path('Recovery_IS_Completed_Table/', Recovery_IS_Completed_Table.as_view(), name='Recovery_IS_Completed_Table'),
     path('Recovery_IS_AcceptTable/', Recovery_IS_AcceptTable.as_view(), name='Recovery_IS_AcceptTable'),
     path('Recovery_IS_RejectTable/', Recovery_IS_RejectTable.as_view(), name='Recovery_IS_RejectTable'),
 

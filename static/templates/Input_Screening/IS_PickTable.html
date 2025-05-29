@@ -1,7 +1,7 @@
 {% extends "base.html" %} {% load static %} {% block content %}
 <style>
 /* Center and style the tray scan table title */
-   .tray-scan-modal-Jig h5 {
+   .tray-scan-modal-IS h5 {
    text-align: center !important;
    margin: 0 auto 8px auto !important;
    font-size: 1.15rem !important;
@@ -9,23 +9,23 @@
    width: 100%;
    display: block;
    }
-   #trayScanDetails_Jig.table-grid > div.tray-validation-status-header {
+   #trayScanDetails_IS.table-grid > div.tray-validation-status-header {
    background-color: #e0f7fa !important;
    font-weight: bold !important;
    color: #028084 !important;
    }
-   #trayScanDetails_Jig.table-grid > div.tray-validation-status-cell {
+   #trayScanDetails_IS.table-grid > div.tray-validation-status-cell {
    background-color: #f1fcff !important;
    font-weight: bold !important;
    color: #028084 !important;
    }
       /* When modal is active, dim the content */
-   .tray-scan-modal-Jig.active ~ .content-wrapper {
+   .tray-scan-modal-IS.active ~ .content-wrapper {
    opacity: 0.3;
    pointer-events: none; /* Optional: disable interaction */
    }
-   /* trayScanDetails_Jig 3-column grid with scroll */
-   #trayScanDetails_Jig.table-grid {
+   /* trayScanDetails_IS 3-column grid with scroll */
+   #trayScanDetails_IS.table-grid {
    display: grid !important; /* override any existing grid or flex */
    grid-template-columns: repeat(4, 1fr) !important; /* Table column max limit */
    gap: 0px !important;
@@ -34,8 +34,8 @@
    padding-right: 10px; /* prevent scrollbar overlay */
    margin-top: 10px;
    }
-   /* Styling individual grid cells, only inside trayScanDetails_Jig */
-   #trayScanDetails_Jig.table-grid > div {
+   /* Styling individual grid cells, only inside trayScanDetails_IS */
+   #trayScanDetails_IS.table-grid > div {
    background: #f7f7f7;
    padding: 8px 12px;
    font-size: 12px;
@@ -43,8 +43,8 @@
    margin: 0; /* reset any margin from 
    <p> or others */
       }
-      /* Sticky header row: first 3 divs inside trayScanDetails_Jig */
-      #trayScanDetails_Jig.table-grid > div:nth-child(-n + 3) {
+      /* Sticky header row: first 3 divs inside trayScanDetails_IS */
+      #trayScanDetails_IS.table-grid > div:nth-child(-n + 3) {
       background-color: #e0e0e0;
       font-weight: 600;
       position: sticky;
@@ -53,21 +53,21 @@
       align-items: center;
       }
       /* Override only when modal is open */
-      .tray-scan-modal-Jig.open {
+      .tray-scan-modal-IS.open {
       width: 600px; /* your desired expanded width */
       margin-right: 20px;
       }
       /* Keep it hidden with negative offset matching default width */
-      .tray-scan-modal-Jig {
+      .tray-scan-modal-IS {
       right: -500px; /* must match the new width above to stay hidden properly */
       }
-      #trayScanModal_Jig {
+      #trayScanModal_IS {
       border-radius: 12px;
       max-height: 90vh;
       top: 40px; /* Moves the entire modal down from the top of the viewport */
       height: calc(100% - 40px); /* Keeps height correct */
       }
-      #trayScanDetails_Jig {
+      #trayScanDetails_IS {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 12px;
@@ -75,14 +75,14 @@
       }
       /* Make each 
    <p> act like a table cell */
-      #trayScanDetails_Jig p {
+      #trayScanDetails_IS p {
       margin: 0;
       padding: 4px 8px;
       background: #f7f7f7;
       border-radius: 6px;
       font-size: 14px;
       }
-      .tray-scan-modal-Jig {
+      .tray-scan-modal-IS {
       position: fixed;
       top: 0;
       right: -400px; /* Hidden by default */
@@ -96,10 +96,10 @@
       padding: 20px;
       font-family: Arial, sans-serif;
       }
-      .tray-scan-modal-Jig.open {
+      .tray-scan-modal-IS.open {
       right: 0; /* Slide in */
       }
-      .tray-scan-modal-Jig-content {
+      .tray-scan-modal-IS-content {
       position: relative;
       height: 100%;
       }
@@ -694,7 +694,7 @@ thead th {
                        <a
                               href="#"
                               title="View"
-                              class="text-primary tray-scan-btn-Jig"
+                              class="text-primary tray-scan-btn-IS"
                               style="text-decoration: underline"
                               data-batch-id="{{ data.batch_id }}"
                               data-model-no="{{ data.model_stock_no__model_no }}"
@@ -972,7 +972,7 @@ thead th {
                       <a
                               href="#"
                               title="View"
-                              class="text-primary tray-scan-btn-Jig"
+                              class="text-primary tray-scan-btn-IS"
                               style="text-decoration: underline"
                               data-batch-id="{{ data.batch_id }}"
                               data-model-no="{{ data.model_stock_no__model_no }}"
@@ -1271,7 +1271,7 @@ thead th {
                       <a
                               href="#"
                               title="View"
-                              class="text-primary tray-scan-btn-Jig"
+                              class="text-primary tray-scan-btn-IS"
                               style="text-decoration: underline"
                               data-batch-id="{{ data.batch_id }}"
                               data-model-no="{{ data.model_stock_no__model_no }}"
@@ -1549,7 +1549,7 @@ thead th {
                       <a
                               href="#"
                               title="View"
-                              class="text-primary tray-scan-btn-Jig"
+                              class="text-primary tray-scan-btn-IS"
                               style="text-decoration: underline"
                               data-batch-id="{{ data.batch_id }}"
                               data-model-no="{{ data.model_stock_no__model_no }}"
@@ -1704,12 +1704,12 @@ thead th {
 
                <!-- Tray Scan (hyperlink) - Right side modal -->
                   <div
-                     id="trayScanModal_Jig"
-                     class="tray-scan-modal-Jig active"
-                     id="trayScanModal_Jig"
+                     id="trayScanModal_IS"
+                     class="tray-scan-modal-IS active"
+                     id="trayScanModal_IS"
                      >
-                     <div class="tray-scan-modal-Jig-content">
-                        <span id="closetrayScanModal_Jig" class="tray-scan-close"
+                     <div class="tray-scan-modal-IS-content">
+                        <span id="closetrayScanModal_IS" class="tray-scan-close"
                            >&times;</span
                            >
                         <!-- New top header container: title + user profile aligned left -->
@@ -1743,7 +1743,7 @@ thead th {
                         <!-- Redo icon for clearing "tray ID" -->
                         <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;">
                            <h5 style="text-align: center; margin: 0; flex: 1; font-weight: 600; color:#595959">
-                              Jig Loading - Tray Scan
+                              Input Screening - Tray Scan
                            </h5>
                            <!-- Tray Validate Button (NEW) -->
                            <button id="trayValidateBtn" type="button" style="display: flex; align-items: center; gap: 6px; background: #f5faff; border: 1px solid #028084; color: #028084; border-radius: 20px; padding: 4px 14px; font-size: 13px; font-weight: 500; cursor: pointer;">
@@ -1758,8 +1758,8 @@ thead th {
                               title="Clear Tray IDs"
                               />
                         </div>
-                        <!-- trayScanDetails_Jig will be a scrollable 3-column grid with headers and unlimited rows -->
-                        <div id="trayScanDetails_Jig" class="table-grid">
+                        <!-- trayScanDetails_IS will be a scrollable 3-column grid with headers and unlimited rows -->
+                        <div id="trayScanDetails_IS" class="table-grid">
                            <!-- Headers -->
                            <div>S.no</div>
                            <div>Tray ID</div>
@@ -1768,7 +1768,7 @@ thead th {
                            <!-- Example rows (replace with dynamic content) -->
                         </div>
                         <!-- ✅ NEW BUTTONS SECTION -->
-                        <div class="tray-scan-modal-Jig-buttons"
+                        <div class="tray-scan-modal-IS-buttons"
                            style="
                            display: flex;
                            justify-content: center;
@@ -1987,7 +1987,7 @@ thead th {
         const cancelBtn = document.getElementById("trayScanCancelBtn");
         if (cancelBtn) {
           cancelBtn.addEventListener("click", function () {
-            const modal = document.getElementById("trayScanModal_Jig");
+            const modal = document.getElementById("trayScanModal_IS");
             if (modal) modal.classList.remove("open");
           });
         }
@@ -1998,7 +1998,7 @@ thead th {
             e.preventDefault();
             const row = btn.closest('tr');
             if (!row) return;
-            const trayScanLink = row.querySelector('.tray-scan-btn-Jig');
+            const trayScanLink = row.querySelector('.tray-scan-btn-IS');
             if (!trayScanLink) return;
             const batchId = trayScanLink.getAttribute('data-batch-id');
             if (!batchId) {
@@ -2163,10 +2163,10 @@ thead th {
       }
       
       document.addEventListener("DOMContentLoaded", () => {
-          const trayScanLinks = document.querySelectorAll(".tray-scan-btn-Jig");
-          const modal = document.getElementById("trayScanModal_Jig");
-          const closeBtn = document.getElementById("closetrayScanModal_Jig");
-          const detailsDiv = document.getElementById("trayScanDetails_Jig");
+          const trayScanLinks = document.querySelectorAll(".tray-scan-btn-IS");
+          const modal = document.getElementById("trayScanModal_IS");
+          const closeBtn = document.getElementById("closetrayScanModal_IS");
+          const detailsDiv = document.getElementById("trayScanDetails_IS");
           const modalModelNo = document.getElementById("modalModelNo");
       
           trayScanLinks.forEach((link) => {
@@ -2277,7 +2277,7 @@ thead th {
                   }
                   
                   // Hide buttons if Released
-                  const buttonSection = modal.querySelector('.tray-scan-modal-Jig-content > div[style*="justify-content: center"]');
+                  const buttonSection = modal.querySelector('.tray-scan-modal-IS-content > div[style*="justify-content: center"]');
                   if (buttonSection) {
                       buttonSection.style.display = isReleased ? "none" : (showButtons ? "flex" : "none");
                   }
@@ -2464,7 +2464,7 @@ thead th {
                                               });
                                               modal.classList.remove("open");
                                               // Update the batch status cell in the row
-                                              const currentRow = document.querySelector(`.tray-scan-btn-Jig[data-batch-id="${batchId}"]`)?.closest('tr');
+                                              const currentRow = document.querySelector(`.tray-scan-btn-IS[data-batch-id="${batchId}"]`)?.closest('tr');
                                               if (currentRow) {
                                                   const statusCell = currentRow.querySelector('td:nth-child(13)'); // 13th column is Batch Status
                                                   if (statusCell) {
@@ -2568,7 +2568,7 @@ thead th {
                                     showConfirmButton: false
                                   });
                                   modal.classList.remove("open");
-                                  const currentRow = document.querySelector(`.tray-scan-btn-Jig[data-batch-id="${batchId}"]`)?.closest('tr');
+                                  const currentRow = document.querySelector(`.tray-scan-btn-IS[data-batch-id="${batchId}"]`)?.closest('tr');
                                   if (currentRow) {
                                       const statusCell = currentRow.querySelector('td:nth-child(13)');
                                       if (statusCell) {

@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'Input_Screening',
     'Brass_Qc',
     
+    
 ]
 
 MIDDLEWARE = [

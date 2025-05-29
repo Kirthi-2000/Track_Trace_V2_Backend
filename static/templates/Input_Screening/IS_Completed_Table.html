@@ -496,7 +496,11 @@ thead th {
                       No of Tray <i class="fa fa-filter" aria-hidden="true"></i>
                     </th>
                     <th>
-                      Total Quantity
+                      LOT Qty
+                      <i class="fa fa-filter" aria-hidden="true"></i>
+                    </th>
+                    <th>
+                      Physical Qty
                       <i class="fa fa-filter" aria-hidden="true"></i>
                     </th>
                     
@@ -555,6 +559,9 @@ thead th {
              
                     <td>
                       150
+                    </td>
+                    <td>
+                      10
                     </td>
                     <td>
                       <div
@@ -627,21 +634,13 @@ thead th {
                       </div>
                     </td>
                     <td>
-                      <a href="#" title="Edit">
-                        <img
-                          src="{% static 'assets/icons/edit1.png' %}"
-                          alt="Edit"
-                          style="width: 20px; margin-right: 8px; height: auto"
-                        />
-                      </a>
-                      <a href="#" title="Delete">
-                        <img
-                          src="{% static 'assets/icons/bin.png' %}"
-                          alt="Delete"
-                          style="width: 20px; margin-right: 8px; height: auto"
-                        />
-                      </a>
-                                            <a
+                       <span style="opacity:0.5; pointer-events:none; display:inline-block;">
+                      <img src="{% static 'assets/icons/edit1.png' %}" alt="Edit Disabled" style="width: 20px; margin-right: 8px; height: auto; filter: grayscale(1) opacity(0.5);" />
+                    </span>
+                    <span style="opacity:0.5; pointer-events:none; display:inline-block;">
+                      <img src="{% static 'assets/icons/bin.png' %}" alt="Delete Disabled" style="width: 20px; height: auto; filter: grayscale(1) opacity(0.5);" />
+                    </span>
+                        <a
                               href="#"
                               title="View"
                               class="text-primary tray-scan-btn-Jig"
@@ -672,7 +671,7 @@ thead th {
                           padding: 0.3rem;
                         "
                       >
-                        Yet to Released
+                        Yet to Release
                       </div>
                     </td>
                     <td>
@@ -806,7 +805,9 @@ thead th {
                     <td>
                       50
                     </td>
-                   
+                    <td>
+                      10
+                    </td>
                     <td>
                       <div
                         class="d-inline-block px-3 fw-semibold text-center rounded-pill"
@@ -861,20 +862,12 @@ thead th {
                       </div>
                     </td>
                     <td>
-                      <a href="#" title="Edit">
-                        <img
-                          src="{% static 'assets/icons/edit1.png' %}"
-                          alt="Edit"
-                          style="width: 20px; margin-right: 8px; height: auto"
-                        />
-                      </a>
-                      <a href="#" title="Delete">
-                        <img
-                          src="{% static 'assets/icons/bin.png' %}"
-                          alt="Delete"
-                          style="width: 20px; margin-right: 8px; height: auto"
-                        />
-                      </a>
+                        <span style="opacity:0.5; pointer-events:none; display:inline-block;">
+                      <img src="{% static 'assets/icons/edit1.png' %}" alt="Edit Disabled" style="width: 20px; margin-right: 8px; height: auto; filter: grayscale(1) opacity(0.5);" />
+                    </span>
+                    <span style="opacity:0.5; pointer-events:none; display:inline-block;">
+                      <img src="{% static 'assets/icons/bin.png' %}" alt="Delete Disabled" style="width: 20px; height: auto; filter: grayscale(1) opacity(0.5);" />
+                    </span>
                       
                       <a
                               href="#"
@@ -907,7 +900,7 @@ thead th {
                           padding: 0.3rem;
                         "
                       >
-                        Yet to Released
+                     Released
                       </div>
                     </td>
                     <td>
