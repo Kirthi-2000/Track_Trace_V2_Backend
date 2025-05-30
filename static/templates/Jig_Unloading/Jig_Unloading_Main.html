@@ -2,6 +2,16 @@
 
 <style>
 
+@media (max-width: 900px) {
+  #uploadChildModal > div {
+    max-width: 99vw !important;
+    width: 99vw !important;
+    margin: 10px 0 0 0 !important;
+    border-radius: 0 !important;
+    padding: 8px 2vw !important;
+  }
+}
+
     #unloadModal table,
     #unloadModal th,
     #unloadModal td {
@@ -702,7 +712,7 @@ thead th {
                     <th>Version <i class="fa fa-filter" aria-hidden="true"></i></th>
                     <th>Source-Location <i class="fa fa-filter" aria-hidden="true"></i></th>
                     <th>Jig Type - Capacity <i class="fa fa-filter" aria-hidden="true"></i></th>
-                    <th>Bath Type <i class="fa fa-filter" aria-hidden="true"></i></th>
+                    <th>Tray Type - Capacity <i class="fa fa-filter" aria-hidden="true"></i></th>
                     <th>LOT Qty <i class="fa fa-filter" aria-hidden="true"></i></th>
                     <th>Bath No <i class="fa fa-filter" aria-hidden="true"></i></th>
                     <th>Tray Type - Capacity <i class="fa fa-filter" aria-hidden="true"></i></th>
@@ -925,218 +935,6 @@ thead th {
   </div>
 </a>
     </td>
-  </tr>  <a href="#" class="text-primary tray-scan-btn remarks-modal-trigger" style="text-decoration: underline"
-    data-batch-id="1" data-model-no="MSN-1001" data-no-of-trays="4" data-tray-capacity="24"
-    data-moved-to-d-picker="False" data-tray-qty-list="[30,30,30,30]">Unload</a>  <a href="#" class="text-primary tray-scan-btn remarks-modal-trigger" style="text-decoration: underline"
-    data-batch-id="1" data-model-no="MSN-1001" data-no-of-trays="4" data-tray-capacity="24"
-    data-moved-to-d-picker="False" data-tray-qty-list="[30,30,30,30]">Unload</a>
-  <!-- Static Data Rows -->
-    <tr class="highlighted-tray-scan">
-     <td>1
-        <input type="checkbox" class="row-checkbox" style="vertical-align:middle; margin-left:4px;" />
-  </td>
-    <td>JD001</td>
-    <td>2025-05-28 10:15 AM</td>
-    <td class="model-stock-no-cell" data-images='["/static/assets/images/imagePlaceholder.png"]' data-model-no="MSN-1005" data-remark="Sample remark for MSN-1005">
-      <span class="model-stock-no-text" style="cursor:pointer;">
-        <!-- 5 colored circles -->
-        <span class="model-circle" style="background:#e74c3c;"></span>
-        <span class="model-circle" style="background:#f1c40f;"></span>
-        <span class="model-circle" style="background:#2ecc71;"></span>
-        <span class="model-circle" style="background:#3498db;"></span>
-        <span class="model-circle" style="background:#9b59b6; margin-right:0;"></span>
-        <!-- 6th: expand menu icon -->
-        <span class="expand-model-remark" style="display:inline-block;width:18px;height:18px;vertical-align:middle;cursor:pointer;" title="Expand">
-          <svg width="18" height="18" viewBox="0 0 18 18">
-            <circle cx="9" cy="9" r="8" fill="#bbb"/>
-            <polygon points="6,7 12,7 9,12" fill="#fff"/>
-          </svg>
-        </span>
-      </span>
-    </td>
-    <td>ISP</td>
-    <td>A - Buffed</td>
-    <td>A</td>
-    <td>Nil</td>
-    <td>120 - Jig</td>
-    <td>Semi Bright</td>
-    <td>75</td>
-       <!-- Bath No - Dropdown -->
-       <td>
-  B002
-</td>
-
-   
-       <!-- ... Tray Type - Capacity table value -->
-
-           <td>
-      <span style="display:inline-block;width:14px;height:14px;border-radius:50%;background:#e74c3c;vertical-align:middle;margin-right:6px;"></span>
-      Jumbo-12
-    </td>
-             
-<!-- ...No of Tray -->
- <td>10</td>
-<!-- Process Status column: move T icon here -->
-<td>
-  <div style="display: flex; gap: 6px; align-items: center; justify-content: center;">
-    <div title="Tray Scan"
-      class="d-flex align-items-center justify-content-center rounded-circle ms-1"
-      style="width: 20px; height: 20px; background: linear-gradient(to right, #0c8249 50%, #d3d3d3 50%); color: white; font-weight: 500; line-height: 20px; text-align: center; padding-top: 1px; padding-right: 1px;">
-      UL
-    </div>
-    
-  </div>
-</td>
-       <td>
-      <a href="#" class="edit-qty-btn" data-batch-id="1">
-        <img src="{% static 'assets/icons/edit1.png' %}" alt="Edit" style="width: 20px; margin-right: 8px; height: auto"/>
-      </a>
-      <a href="#" title="Delete">
-        <img src="{% static 'assets/icons/bin.png' %}" alt="Delete" style="width: 20px; margin-right: 8px; height: auto; cursor:pointer;"/>
-      </a>
-      
-      <a href="#" class="text-primary tray-scan-btn remarks-modal-trigger" style="text-decoration: underline"
-        data-batch-id="1" data-model-no="MSN-1001" data-no-of-trays="4" data-tray-capacity="24"
-        data-moved-to-d-picker="False" data-tray-qty-list="[30,30,30,30]">Unload</a>
-    </td>
-    
-    
-    <td>
-      <div class="d-inline-block px-3 fw-semibold text-center rounded-pill"
-        style="border: 1px solid #4997ac;
-                          background-color: #d1f2f3;
-                          color: #03425d; font-size: 12px; white-space: nowrap; padding: 6px;">
-        On-Hold
-      </div>
-    </td>
-    <td>
-      <div class="d-inline-block px-3 fw-semibold text-center rounded-pill"
-        style="border: 1px solid #9adeed; background-color: #d1edf3; color: #033b5d; font-size: 12px; white-space: nowrap; padding: 6px;">
-        Day Planning
-      </div>
-    </td>
-   
-    <td>
-      <a href="#" title="Add Remark" class="remark-tooltip-trigger" style="display: inline-flex; align-items: center; height: 20px; margin-left: 5px; position: relative; cursor: pointer;">
-  <img src="{% static 'assets/icons/chat1.png' %}" alt="Chat" style="width: 20px; height: 20px"/>
-  <img src="{% static 'assets/icons/play1.png' %}" alt="View" class="toggle-play-pause" style="width: 20px; height: 20px; margin-left: 4px; cursor:pointer;"/>
-  <div class="remark-tooltip"
-    style="position: absolute; top: 110%; left: 50%; transform: translateX(-50%); width: 300px; background: #fff; border: 1px solid #ccc; border-radius: 6px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); opacity: 0; visibility: hidden; transition: opacity 0.3s ease, visibility 0.3s ease; padding: 15px; z-index: 1000;">
-    <div style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-bottom: 10px solid #fff;"></div>
-    <textarea placeholder="Type your remark..." style="width: 85%; height: 40px; resize: vertical; border: 1px solid #ccc; padding: 5px; border-radius: 4px; font-family: Arial, sans-serif; font-size: 14px;"></textarea>
-    <div style="text-align: right; margin-top: -35px">
-      <button type="button" style="background-color: #007bff; color: #fff; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-size: 14px;">
-        <i class="fa fa-send"></i>
-      </button>
-    </div>
-  </div>
-</a>
-    </td>
-  </tr>
-  <!-- Static Data Rows -->
-    <tr class="highlighted-tray-scan">
-     <td>1
-        <input type="checkbox" class="row-checkbox" style="vertical-align:middle; margin-left:4px;" />
-  </td>
-    <td>JD001</td>
-    <td>2025-05-28 10:15 AM</td>
-    <td class="model-stock-no-cell" data-images='["/static/assets/images/imagePlaceholder.png"]' data-model-no="MSN-1005" data-remark="Sample remark for MSN-1005">
-      <span class="model-stock-no-text" style="cursor:pointer;">
-        <!-- 5 colored circles -->
-        <span class="model-circle" style="background:#e74c3c;"></span>
-        <span class="model-circle" style="background:#f1c40f;"></span>
-        <span class="model-circle" style="background:#2ecc71;"></span>
-        <span class="model-circle" style="background:#3498db;"></span>
-        <span class="model-circle" style="background:#9b59b6; margin-right:0;"></span>
-        <!-- 6th: expand menu icon -->
-        <span class="expand-model-remark" style="display:inline-block;width:18px;height:18px;vertical-align:middle;cursor:pointer;" title="Expand">
-          <svg width="18" height="18" viewBox="0 0 18 18">
-            <circle cx="9" cy="9" r="8" fill="#bbb"/>
-            <polygon points="6,7 12,7 9,12" fill="#fff"/>
-          </svg>
-        </span>
-      </span>
-    </td>
-    <td>ISP</td>
-    <td>A - Buffed</td>
-    <td>A</td>
-    <td>Nil</td>
-    <td>120 - Jig</td>
-    <td>Semi Bright</td>
-    <td>75</td>
-       <!-- Bath No  -->
-        <td>
-  B003
-</td>
-        
-
-   
-       <!-- ...Tray Type Capacity. -->
-
-           <td>
-      <span style="display:inline-block;width:14px;height:14px;border-radius:50%;background:#2ecc71;vertical-align:middle;margin-right:6px;"></span>
-      Normal-16
-    </td>
-              
-<!-- ...No of Tray -->
- <td>10</td>
-<!-- Process Status column: move T icon here -->
-<td>
-  <div style="display: flex; gap: 6px; align-items: center; justify-content: center;">
-    <div title="Tray Scan"
-      class="d-flex align-items-center justify-content-center rounded-circle ms-1"
-      style="width: 20px; height: 20px; background-color: #d3d3d3; color: white; font-weight: 500; line-height: 20px; text-align: center; padding-top: 1px; padding-right: 1px;">
-      UL
-    </div>
-   
-  </div>
-</td>
-       <td>
-      <a href="#" class="edit-qty-btn" data-batch-id="1">
-        <img src="{% static 'assets/icons/edit1.png' %}" alt="Edit" style="width: 20px; margin-right: 8px; height: auto"/>
-      </a>
-      <a href="#" title="Delete">
-        <img src="{% static 'assets/icons/bin.png' %}" alt="Delete" style="width: 20px; margin-right: 8px; height: auto; cursor:pointer;"/>
-      </a>
-      
-      <a href="#" class="text-primary tray-scan-btn remarks-modal-trigger" style="text-decoration: underline"
-        data-batch-id="1" data-model-no="MSN-1001" data-no-of-trays="4" data-tray-capacity="24"
-        data-moved-to-d-picker="False" data-tray-qty-list="[30,30,30,30]">Unload</a>
-    </td>
-    
-   
-    
-    <td>
-      <div class="d-inline-block px-3 fw-semibold text-center rounded-pill"
-        style="border: 1px solid #a6a6a6;
-                          background-color: #dcdada;
-                          color: #505050; font-size: 12px; white-space: nowrap; padding: 6px;">
-        Yet To Start
-      </div>
-    </td>
-    <td>
-      <div class="d-inline-block px-3 fw-semibold text-center rounded-pill"
-        style="border: 1px solid #9adeed; background-color: #d1edf3; color: #033b5d; font-size: 12px; white-space: nowrap; padding: 6px;">
-        Day Planning
-      </div>
-    </td>
-   
-    <td>
-      <a href="#" title="Add Remark" class="remark-tooltip-trigger" style="display: inline-flex; align-items: center; height: 20px; margin-left: 5px; position: relative; cursor: pointer;">
-  <img src="{% static 'assets/icons/chat1.png' %}" alt="Chat" style="width: 20px; height: 20px"/>
-  <img src="{% static 'assets/icons/play1.png' %}" alt="View" class="toggle-play-pause" style="width: 20px; height: 20px; margin-left: 4px; cursor:pointer;"/>
-  <div class="remark-tooltip"
-    style="position: absolute; top: 110%; left: 50%; transform: translateX(-50%); width: 300px; background: #fff; border: 1px solid #ccc; border-radius: 6px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); opacity: 0; visibility: hidden; transition: opacity 0.3s ease, visibility 0.3s ease; padding: 15px; z-index: 1000;">
-    <div style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-bottom: 10px solid #fff;"></div>
-    <textarea placeholder="Type your remark..." style="width: 85%; height: 40px; resize: vertical; border: 1px solid #ccc; padding: 5px; border-radius: 4px; font-family: Arial, sans-serif; font-size: 14px;"></textarea>
-    <div style="text-align: right; margin-top: -35px">
-      <button type="button" style="background-color: #007bff; color: #fff; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-size: 14px;">
-        <i class="fa fa-send"></i>
-      </button>
-    </div>
-  </div>
-</a>
-    </td>
   </tr>
   <!-- Static Data Rows -->
     <tr class="highlighted-tray-scan">
@@ -1275,9 +1073,7 @@ thead th {
     <td>Semi Bright</td>
     <td>75</td>
        <!-- Bath No -->
-       <td>
-  B001
-</td>
+       <td>B001</td>
    
        <!-- ... Tray Type Capacity -->
                            <td>
@@ -1373,105 +1169,6 @@ thead th {
     <td>120 - Jig</td>
     <td>Semi Bright</td>
     <td>75</td>
-       <!-- Bath No -->
-       <td>
-  B001
-</td>
-   
-       <!-- ... Tray Type Capacity -->
-                           <td>
-              <span style="display:inline-block;width:14px;height:14px;border-radius:50%;background:#e74c3c;vertical-align:middle;margin-right:6px;"></span>
-              Jumbo-12
-            </td>
-<!-- ...No of Tray -->
- <td>10</td>
-<!-- Process Status column: move T icon here -->
-<td>
-  <div style="display: flex; gap: 6px; align-items: center; justify-content: center;">
-    <div title="Tray Scan"
-      class="d-flex align-items-center justify-content-center rounded-circle ms-1"
-      style="width: 20px; height: 20px; background-color: #0c8249; color: white; font-weight: 500; line-height: 20px; text-align: center; padding-top: 1px; padding-right: 1px;">
-      UL
-    </div>
-    
-  </div>
-</td>
-       <td>
-      <a href="#" class="edit-qty-btn" data-batch-id="1">
-        <img src="{% static 'assets/icons/edit1.png' %}" alt="Edit" style="width: 20px; margin-right: 8px; height: auto"/>
-      </a>
-      <a href="#" title="Delete">
-        <img src="{% static 'assets/icons/bin.png' %}" alt="Delete" style="width: 20px; margin-right: 8px; height: auto; cursor:pointer;"/>
-      </a>
-      
-      <a href="#" class="text-primary tray-scan-btn remarks-modal-trigger" style="text-decoration: underline"
-        data-batch-id="1" data-model-no="MSN-1001" data-no-of-trays="4" data-tray-capacity="24"
-        data-moved-to-d-picker="False" data-tray-qty-list="[30,30,30,30]">Unload</a>
-    </td>
-    
-    
-    
-    <td>
-      <div class="d-inline-block px-3 fw-semibold text-center rounded-pill"
-        style="border: 2px solid #0d5d17; background-color: #c5f9c2; color: #2f801b; font-size: 12px; white-space: nowrap; padding: 6px;">
-        Yet To Release
-      </div>
-    </td>
-    <td>
-      <div class="d-inline-block px-3 fw-semibold text-center rounded-pill"
-        style="border: 1px solid #9adeed; background-color: #d1edf3; color: #033b5d; font-size: 12px; white-space: nowrap; padding: 6px;">
-        Day Planning
-      </div>
-    </td>
-   
-    <td>
-      <a href="#" title="Add Remark" class="remark-tooltip-trigger" style="display: inline-flex; align-items: center; height: 20px; margin-left: 5px; position: relative; cursor: pointer;">
-  <img src="{% static 'assets/icons/chat1.png' %}" alt="Chat" style="width: 20px; height: 20px"/>
-  <img src="{% static 'assets/icons/play1.png' %}" alt="View" class="toggle-play-pause" style="width: 20px; height: 20px; margin-left: 4px; cursor:pointer;"/>
-  <div class="remark-tooltip"
-    style="position: absolute; top: 110%; left: 50%; transform: translateX(-50%); width: 300px; background: #fff; border: 1px solid #ccc; border-radius: 6px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); opacity: 0; visibility: hidden; transition: opacity 0.3s ease, visibility 0.3s ease; padding: 15px; z-index: 1000;">
-    <div style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-bottom: 10px solid #fff;"></div>
-    <textarea placeholder="Type your remark..." style="width: 85%; height: 40px; resize: vertical; border: 1px solid #ccc; padding: 5px; border-radius: 4px; font-family: Arial, sans-serif; font-size: 14px;"></textarea>
-    <div style="text-align: right; margin-top: -35px">
-      <button type="button" style="background-color: #007bff; color: #fff; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-size: 14px;">
-        <i class="fa fa-send"></i>
-      </button>
-    </div>
-  </div>
-</a>
-    </td>
-  </tr>
-  <!-- Static Data Rows -->
-    <tr class="highlighted-tray-scan">
-     <td>1
-        <input type="checkbox" class="row-checkbox" style="vertical-align:middle; margin-left:4px;" />
-  </td>
-    <td>JD001</td>
-    <td>2025-05-28 10:15 AM</td>
-    <td class="model-stock-no-cell" data-images='["/static/assets/images/imagePlaceholder.png"]' data-model-no="MSN-1005" data-remark="Sample remark for MSN-1005">
-      <span class="model-stock-no-text" style="cursor:pointer;">
-        <!-- 5 colored circles -->
-        <span class="model-circle" style="background:#e74c3c;"></span>
-        <span class="model-circle" style="background:#f1c40f;"></span>
-        <span class="model-circle" style="background:#2ecc71;"></span>
-        <span class="model-circle" style="background:#3498db;"></span>
-        <span class="model-circle" style="background:#9b59b6; margin-right:0;"></span>
-        <!-- 6th: expand menu icon -->
-        <span class="expand-model-remark" style="display:inline-block;width:18px;height:18px;vertical-align:middle;cursor:pointer;" title="Expand">
-          <svg width="18" height="18" viewBox="0 0 18 18">
-            <circle cx="9" cy="9" r="8" fill="#bbb"/>
-            <polygon points="6,7 12,7 9,12" fill="#fff"/>
-          </svg>
-        </span>
-      </span>
-    </td>
-    <td>ISP</td>
-    <td>A - Buffed</td>
-    <td>A</td>
-    <td>Nil</td>
-    <td>120 - Jig</td>
-    <td>Semi Bright</td>
-    <td>75</td>
        <!-- Bath No  -->
         <td>
   B005
@@ -1510,7 +1207,7 @@ thead th {
         data-moved-to-d-picker="False" data-tray-qty-list="[30,30,30,30]">Unload</a>
     </td>
     
-    
+   
     
     <td>
       <div class="d-inline-block px-3 fw-semibold text-center rounded-pill"
@@ -1526,7 +1223,7 @@ thead th {
     </td>
    
     <td>
-      <a href="#" title="Add Remark" class="remark-tooltip-trigger" style="display: inline-flex; align-items: center; height: 20px; margin-left: 5px; position: relative; cursor: pointer;">
+     <a href="#" title="Add Remark" class="remark-tooltip-trigger" style="display: inline-flex; align-items: center; height: 20px; margin-left: 5px; position: relative; cursor: pointer;">
   <img src="{% static 'assets/icons/chat1.png' %}" alt="Chat" style="width: 20px; height: 20px"/>
   <img src="{% static 'assets/icons/play1.png' %}" alt="View" class="toggle-play-pause" style="width: 20px; height: 20px; margin-left: 4px; cursor:pointer;"/>
   <div class="remark-tooltip"
@@ -1573,8 +1270,8 @@ thead th {
     <td>120 - Jig</td>
     <td>Semi Bright</td>
     <td>75</td>
-       <!-- Bath No  -->
-        <td>
+       <!-- Bath No -->
+      <td>
   B006
 </td>
    
@@ -1610,7 +1307,7 @@ thead th {
         data-moved-to-d-picker="False" data-tray-qty-list="[30,30,30,30]">Unload</a>
     </td>
     
-    
+
     
     <td>
       <div class="d-inline-block px-3 fw-semibold text-center rounded-pill"
@@ -1626,7 +1323,7 @@ thead th {
     </td>
    
     <td>
-      <a href="#" title="Add Remark" class="remark-tooltip-trigger" style="display: inline-flex; align-items: center; height: 20px; margin-left: 5px; position: relative; cursor: pointer;">
+     <a href="#" title="Add Remark" class="remark-tooltip-trigger" style="display: inline-flex; align-items: center; height: 20px; margin-left: 5px; position: relative; cursor: pointer;">
   <img src="{% static 'assets/icons/chat1.png' %}" alt="Chat" style="width: 20px; height: 20px"/>
   <img src="{% static 'assets/icons/play1.png' %}" alt="View" class="toggle-play-pause" style="width: 20px; height: 20px; margin-left: 4px; cursor:pointer;"/>
   <div class="remark-tooltip"
@@ -2493,10 +2190,436 @@ document.addEventListener("DOMContentLoaded", function () {
               modal.classList.remove("open");
           }
       });
+  });
+
+  
+  </script>
+
+ <script nonce="{{ csp_nonce }}">
+    document.addEventListener("DOMContentLoaded", function () {
+      var triggers = document.querySelectorAll(".remark-tooltip-trigger");
+      triggers.forEach(function (trigger) {
+        var tooltip = trigger.querySelector(".remark-tooltip");
+        var sendButton = tooltip ? tooltip.querySelector("button") : null;
+        function showTooltip() {
+          tooltip.style.opacity = "1";
+          tooltip.style.visibility = "visible";
+          var rect = tooltip.getBoundingClientRect();
+          if (rect.right > window.innerWidth) {
+            tooltip.style.left = "auto";
+            tooltip.style.right = "0";
+            tooltip.style.transform = "none";
+          }
+          if (rect.left < 0) {
+            tooltip.style.left = "0";
+            tooltip.style.transform = "none";
+          }
+          var textarea = tooltip.querySelector("textarea");
+          if (textarea) {
+            textarea.focus();
+          }
+        }
+        function hideTooltip() {
+          tooltip.style.opacity = "0";
+          tooltip.style.visibility = "hidden";
+        }
+        trigger.addEventListener("mouseenter", showTooltip);
+        trigger.addEventListener("mouseleave", function () {
+          setTimeout(function () {
+            if (!trigger.matches(":hover") && !tooltip.matches(":hover")) {
+              hideTooltip();
+            }
+          }, 100);
+        });
+        tooltip.addEventListener("mouseleave", function () {
+          setTimeout(function () {
+            if (!tooltip.matches(":hover") && !trigger.matches(":hover")) {
+              hideTooltip();
+            }
+          }, 100);
+        });
+        trigger.addEventListener("click", function (e) {
+          e.preventDefault();
+        });
+        if (sendButton) {
+          sendButton.addEventListener("click", function (e) {
+            e.preventDefault();
+            // Find the textarea and get its value
+            var textarea = tooltip.querySelector("textarea");
+            var remark = textarea ? textarea.value.trim() : "";
+            if (!remark) {
+              Swal.fire('Error', 'Please enter a remark before sending.', 'error');
+              return;
+            }
+            // Find the batch_id from the row (tr) data attribute or from a hidden field
+            var row = trigger.closest("tr");
+            var trayScanLink = row ? row.querySelector('.tray-scan-btn') : null;
+            var batchId = trayScanLink ? trayScanLink.getAttribute('data-batch-id') : null;
+            if (!batchId) {
+              Swal.fire('Error', 'Batch ID not found.', 'error');
+              return;
+            }
+            fetch('/dayplanning/save_dp_pick_remark/', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                'X-CSRFToken': getCookie('csrftoken')
+              },
+              body: JSON.stringify({
+                batch_id: batchId,
+                remark: remark
+              })
+            })
+            .then(res => res.json())
+            .then(data => {
+              if (data.success) {
+                Swal.fire({
+                  icon: 'success',
+                  title: 'Remark saved!',
+                  timer: 1200,
+                  showConfirmButton: false
+                }).then(() => {
+                  // Make the textarea readonly
+                  if (textarea) {
+                    textarea.setAttribute("readonly", true);
+                  }
+
+                  // Replace send button with info message
+                  if (sendButton && tooltip) {
+                    const infoDiv = document.createElement("div");
+                    infoDiv.style.marginTop = "40px";
+                    infoDiv.style.color = "#31708f";
+                    infoDiv.style.background = "#d9edf7";
+                    infoDiv.style.border = "1px solid #bce8f1";
+                    infoDiv.style.borderRadius = "4px";
+                    infoDiv.style.padding = "8px 12px";
+                    infoDiv.style.fontSize = "10px";
+                    infoDiv.style.textAlign = "left";
+                    infoDiv.innerHTML = `
+                      <i class="fa fa-info-circle" style="margin-right: 6px;"></i>
+                      Remark already saved and cannot be edited.
+                    `;
+                    sendButton.parentNode.replaceChild(infoDiv, sendButton);
+                  }
+
+                  hideTooltip(); // optional if you still want to hide the tooltip
+                });
+
+              } else {
+                Swal.fire('Error', data.error || 'Failed to save remark', 'error');
+              }
+            })
+            .catch(() => {
+              Swal.fire('Error', 'Network error', 'error');
+            });
+          });
+        }
+      });
     });
   </script>
 
-  <!-- Script for clearing "Tray ID" while hitting "Redo" icon -->
+    <!-- Script for Model/Stoc No Mouser Hover Tooltip to Show Images -->
+   <script nonce="{{ csp_nonce }}">
+  document.addEventListener("DOMContentLoaded", function () {
+    console.log("Model/Stock No hover tooltip script loaded");
+  
+    // Helper to create tooltip
+    function createImageTooltip(images, staticMode = false, modelNo = "") {
+      let idx = 0;
+      const tooltip = document.createElement('div');
+      tooltip.className = 'model-image-tooltip' + (staticMode ? ' static' : '');
+      if (!images.length) {
+        tooltip.innerHTML = `
+          <div style="padding: 20px; text-align: center; color: #888; font-size: 15px; min-width:220px; min-height:80px;">
+            <b>No image exists for model number:</b><br>
+            <span style="color:#028084">${modelNo || "N/A"}</span>
+          </div>
+          <span class="close-btn" style="display:${staticMode ? 'block' : 'none'};position:absolute;top:4px;right:8px;font-size:18px;cursor:pointer;">&times;</span>
+        `;
+        if (staticMode) {
+          tooltip.querySelector('.close-btn').onclick = function() {
+            tooltip.remove();
+          };
+        }
+        return tooltip;
+      }
+      tooltip.innerHTML = `
+        <span class="close-btn" style="display:${staticMode ? 'block' : 'none'};">&times;</span>
+        <div class="image-slider">
+          <button class="slider-btn prev-btn" ${images.length <= 1 ? 'disabled' : ''}>&lt;</button>
+          <img src="${images[0] || ''}" alt="Model Image" />
+          <button class="slider-btn next-btn" ${images.length <= 1 ? 'disabled' : ''}>&gt;</button>
+        </div>
+        <div style="text-align:center; font-size:12px; margin-top:4px;">
+          <span class="slider-index">1</span> / ${images.length}
+        </div>
+      `;
+      // Slider logic
+      const img = tooltip.querySelector('img');
+      const prevBtn = tooltip.querySelector('.prev-btn');
+      const nextBtn = tooltip.querySelector('.next-btn');
+      const idxSpan = tooltip.querySelector('.slider-index');
+      function updateImg() {
+        img.src = images[idx];
+        idxSpan.textContent = (idx + 1);
+        prevBtn.disabled = (idx === 0);
+        nextBtn.disabled = (idx === images.length - 1);
+      }
+      prevBtn && prevBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        if (idx > 0) { idx--; updateImg(); }
+      });
+      nextBtn && nextBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        if (idx < images.length - 1) { idx++; updateImg(); }
+      });
+      // Close button for static mode
+      if (staticMode) {
+        tooltip.querySelector('.close-btn').onclick = function() {
+          tooltip.remove();
+        };
+      }
+      return tooltip;
+    }
+  
+    // Mouse hover for tooltip
+    document.querySelectorAll('.model-stock-no-cell').forEach(function(cell, i) {
+      const textSpan = cell.querySelector('.model-stock-no-text');
+      if (!textSpan) {
+        console.warn("No .model-stock-no-text found in cell", cell);
+        return;
+      }
+      let tooltip = null;
+      let hideTimeout = null;
+      let staticTooltip = null;
+      let images = [];
+      let modelNo = textSpan.textContent.trim();
+      try {
+        images = JSON.parse(cell.getAttribute('data-images') || '[]');
+        if (!Array.isArray(images)) images = [];
+      } catch (err) {
+        images = [];
+        console.error("Error parsing data-images for cell", i, cell, err);
+      }
+      console.log(`Row ${i + 1} Model No: ${modelNo}, Images:`, images);
+  
+         textSpan.addEventListener('mouseenter', function(e) {
+      // Only show tooltip if NOT hovering the expand icon
+      if (e.target.closest('.expand-model-remark')) return;
+      if (staticTooltip) return;
+      if (tooltip) tooltip.remove();
+      tooltip = createImageTooltip(images, false, modelNo);
+      document.body.appendChild(tooltip);
+      tooltip.style.display = 'block';
+      const rect = textSpan.getBoundingClientRect();
+      tooltip.style.top = (window.scrollY + rect.bottom + 6) + 'px';
+      tooltip.style.left = (window.scrollX + rect.left) + 'px';
+      console.log(`Tooltip shown for model: ${modelNo}`);
+    });
+      textSpan.addEventListener('mouseleave', function() {
+        if (staticTooltip) return;
+        hideTimeout = setTimeout(() => { if (tooltip) { tooltip.remove(); tooltip = null; } }, 150);
+      });
+      // Keep tooltip visible if hovered
+      document.body.addEventListener('mousemove', function(e) {
+        if (!tooltip) return;
+        if (e.target === tooltip || tooltip.contains(e.target)) {
+          clearTimeout(hideTimeout);
+        } else if (e.target !== textSpan) {
+          hideTimeout = setTimeout(() => { if (tooltip) { tooltip.remove(); tooltip = null; } }, 150);
+        }
+      });
+      // Click to show static tooltip
+      textSpan.addEventListener('click', function(e) {
+        e.stopPropagation();
+        if (staticTooltip) staticTooltip.remove();
+        staticTooltip = createImageTooltip(images, true, modelNo);
+        document.body.appendChild(staticTooltip);
+        // Remove hover tooltip if present
+        if (tooltip) { tooltip.remove(); tooltip = null; }
+        console.log(`Static tooltip pinned for model: ${modelNo}`);
+      });
+      // Remove static tooltip on outside click
+      document.addEventListener('click', function(e) {
+        if (staticTooltip && !staticTooltip.contains(e.target) && e.target !== textSpan) {
+          staticTooltip.remove();
+          staticTooltip = null;
+          console.log(`Static tooltip closed for model: ${modelNo}`);
+        }
+      });
+    });
+  });
+  </script>
+
+<!-- script for buttons in form & highlight -->
+<script nonce="{{ csp_nonce }}">
+// filepath: a:\Workspace\Track_and_Trace_v2\static\templates\Day_Planning\DP_PickTable.html
+document.addEventListener("DOMContentLoaded", function() {
+  const table = document.getElementById('order-listing');
+  const modal = document.getElementById('trayScanModal');
+  const msgBarId = 'dp-table-msg-bar';
+  let msgBar = document.getElementById(msgBarId);
+
+  // Create message bar if not present
+  if (!msgBar && table) {
+    msgBar = document.createElement('div');
+    msgBar.id = msgBarId;
+    msgBar.style.display = 'none';
+    msgBar.style.width = '100%';
+    msgBar.style.margin = '0 0 8px 0';
+    msgBar.style.padding = '10px 24px';
+    msgBar.style.background = '#d1eaff';
+    msgBar.style.color = '#0056b3';
+    msgBar.style.fontWeight = 'bold';
+    msgBar.style.borderRadius = '8px';
+    msgBar.style.fontSize = '1.1rem';
+    msgBar.style.textAlign = 'center';
+    msgBar.style.transition = 'opacity 0.3s, background 0.3s, color 0.3s';
+    table.parentNode.insertBefore(msgBar, table);
+  }
+
+  // Highlight style (if not present)
+  if (!document.getElementById('dp-row-action-highlight-style')) {
+    var style = document.createElement('style');
+    style.id = 'dp-row-action-highlight-style';
+    style.innerHTML = `
+      .dp-row-action-highlight {
+        box-shadow: 0 0 0 3px #007bff, 0 0 10px #007bff55 !important;
+        transition: box-shadow 9.3s;
+        background-color: #f0f8ff !important;
+        animation: highlightAnimation 2s ease-in-out;
+      }
+    `;
+    document.head.appendChild(style);
+  }
+
+  const btnMsg = {
+    "Draft": "Drafted successfully",
+    "Submit": "Submitted successfully",
+    "Cancel": "Cancelled successfully"
+  };
+  const btnBg = {
+    "Draft": "#d1eaff",    // blue
+    "Submit": "#d4f7d4",   // green
+    "Cancel": "#ffd6d6"    // red
+  };
+  const btnColor = {
+    "Draft": "#0056b3",
+    "Submit": "#218838",
+    "Cancel": "#b30000"
+  };
+
+  document.querySelectorAll('.tray-scan-modal-buttons button').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+
+      // 1. Close the modal immediately
+      if (modal) modal.classList.remove('open');
+
+      // 2. Show alert and highlight row
+      let btnText = btn.textContent.trim();
+      let msg = btnMsg[btnText] || "Action successful";
+      let bg = btnBg[btnText] || "#d1eaff";
+      let color = btnColor[btnText] || "#0056b3";
+      if (msgBar) {
+        msgBar.textContent = msg;
+        msgBar.style.display = 'block';
+        msgBar.style.opacity = '1';
+        msgBar.style.background = bg;
+        msgBar.style.color = color;
+      }
+      document.querySelectorAll('tr.highlighted-tray-scan').forEach(function(row) {
+        row.classList.add('dp-row-action-highlight');
+        setTimeout(function() {
+          row.classList.remove('dp-row-action-highlight');
+        }, 2000);
+      });
+
+      // 3. Hide alert after 2s (and redirect if needed)
+      setTimeout(function() {
+        if (msgBar) {
+          msgBar.style.opacity = '0';
+          setTimeout(function() { msgBar.style.display = 'none'; }, 300);
+        }
+        // Uncomment below if you want to redirect after alert
+        // window.location.href = "{% url 'dp_pick_table' %}";
+      }, 3000);
+    });
+  });
+});
+</script>
+
+
+<!-- Script for Tray Scan - Row Highlight -->
+  <script nonce="{{ csp_nonce }}">
+    document.addEventListener("DOMContentLoaded", () => {
+      const trayScanLinks = document.querySelectorAll(".tray-scan-btn");
+      const modal = document.getElementById("trayScanModal");
+      const closeBtn = document.getElementById("closeTrayScanModal");
+      const detailsDiv = document.getElementById("trayScanDetails");
+
+      trayScanLinks.forEach((link) => {
+        link.addEventListener("click", (event) => {
+          event.preventDefault();
+
+          const row = event.target.closest("tr");
+          if (!row) return;
+
+          // ✅ Highlight the clicked row
+          document.querySelectorAll("tbody tr").forEach((row) => {
+            row.classList.remove("highlighted-tray-scan");
+          });
+          row.classList.add("highlighted-tray-scan");
+
+          // Clear previous content and insert only the table header and sample rows
+          detailsDiv.innerHTML = `
+  <div>S.no</div>
+  <div>Tray ID</div>
+  <div>Tray Qty</div>
+
+  <div>1 (Top Tray)</div>
+<div>Tray001</div>
+<div style="display: flex; align-items: center; gap: 12px;">
+                        <span>10</span>
+                        <div style="display: flex; gap: 12px;">
+                          <input type="checkbox" style="width: 20px; height: 20px; cursor: pointer;" />
+                          <img src="/static/assets/icons/edit2.png" alt="Edit" style="width: 20px; height: 20px; cursor: pointer;" />
+                        </div>
+                      </div>
+ 
+
+
+  <div>2</div>
+  <div>Tray002</div>
+  <div>20</div>
+
+  <div>3</div>
+  <div>Tray003</div>
+  <div>15</div>
+
+   <div>4</div>
+  <div>Tray004</div>
+  <div>15</div>
+`;
+
+          modal.classList.add("open");
+        });
+      });
+
+      closeBtn.addEventListener("click", () => {
+        modal.classList.remove("open");
+      });
+
+      modal.addEventListener("click", (event) => {
+        if (event.target === modal) {
+          modal.classList.remove("open");
+        }
+      });
+    });
+  </script>
+  
+
+   <!-- Script for clearing "Tray ID" while hitting "Redo" icon -->
   <script nonce="{{ csp_nonce }}">
   document.addEventListener("DOMContentLoaded", function () {
     const redoBtn = document.getElementById("trayScanRedoBtn");
@@ -2740,18 +2863,20 @@ document.addEventListener("DOMContentLoaded", function () {
     const modal = document.createElement('div');
     modal.id = 'unloadModal';
     modal.style = `
-      display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; z-index:20000;
-      background:rgba(0,0,0,0.25); align-items:center; justify-content:center;
+      display:none; position:fixed; top:0; right:0; height:100vh; z-index:20000;
+      background:rgba(0,0,0,0.10); align-items:flex-start; justify-content:flex-end;
+      width:100vw; max-width:100vw;
     `;
     modal.innerHTML = `
       <div style="
-        background:#fff; border-radius:12px; max-width:520px; width:96vw; max-height:80vh; padding:24px 18px 18px 18px;
-        box-shadow:0 8px 32px rgba(0,0,0,0.18); position:relative; display:flex; flex-direction:column;
+        background:#fff; border-radius:12px; max-width:420px; width:96vw; max-height:96vh; padding:24px 18px 18px 18px;
+        box-shadow:0 8px 32px rgba(0,0,0,0.18); position:relative; display:flex; flex-direction:column; margin:24px 12px 24px 0;
+        overflow-y:auto;
       ">
         <span id="unloadModalClose" style="position:absolute;top:10px;right:18px;font-size:22px;cursor:pointer;color:#888;">&times;</span>
         <h5 style="margin:0 0 16px 0; text-align:center; font-weight:700;">Unload Models</h5>
-        <div style="overflow-y:auto; max-height:48vh;">
-          <table style="width:100%; border-collapse:collapse; min-width:400px;">
+        <div style="overflow-y:auto; max-height:60vh;">
+          <table style="width:100%; border-collapse:collapse; min-width:320px;">
             <thead>
               <tr style="background:#f7f7f7;">
                 <th style="padding:8px 6px; border-bottom:1px solid #ddd;">Image</th>
@@ -2768,6 +2893,20 @@ document.addEventListener("DOMContentLoaded", function () {
       </div>
     `;
     document.body.appendChild(modal);
+
+    // Responsive: full width on small screens
+    const style = document.createElement('style');
+    style.innerHTML = `
+      @media (max-width: 600px) {
+        #unloadModal > div {
+          max-width: 99vw !important;
+          width: 99vw !important;
+          margin: 10px 0 0 0 !important;
+          border-radius: 0 !important;
+        }
+      }
+    `;
+    document.head.appendChild(style);
   }
 
   // Demo data (replace with your dynamic data)
@@ -2837,38 +2976,180 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Optional: handle Unload button in table
+   // Optional: handle Unload button in table
   document.body.addEventListener('click', function(e) {
-    if (e.target.classList.contains('unload-row-btn')) {
-      e.target.textContent = "Unloaded!";
-      e.target.disabled = true;
-      e.target.style.background = "#2ecc71";
-      // You can add your AJAX here
+    if (
+      e.target.tagName === 'BUTTON' &&
+      e.target.textContent.trim().toLowerCase() === 'unload' &&
+      e.target.closest('#unloadModal tbody')
+    ) {
+      e.preventDefault();
+      document.getElementById('uploadChildModal').style.display = 'flex';
     }
   });
 });
 </script>
 
+<!-- Script for existing "Upload" button in "Unload Models" modal to display upload confirmation child window -->
 <script nonce="{{ csp_nonce }}">
 document.addEventListener("DOMContentLoaded", function () {
-  // Select only Unload links that also trigger the remarks modal (based on the class names)
-  const unloadLinks = document.querySelectorAll('a.tray-scan-btn.remarks-modal-trigger');
-  unloadLinks.forEach(function(link) {
-    link.addEventListener("click", function(e) {
+  // 1. Create the Upload Child Modal if not already present
+  if (!document.getElementById('uploadChildModal')) {
+    const uploadModal = document.createElement('div');
+    uploadModal.id = 'uploadChildModal';
+    uploadModal.style = `
+      display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 30000;
+      background: rgba(0, 0, 0, 0.18); align-items: center; justify-content: center;
+    `;
+       uploadModal.innerHTML = `
+      <div style="
+        background: #fff; border-radius: 12px; max-width: 800px; width: 550px; max-height: 80vh; padding: 20px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18); position: relative; display: flex; flex-direction: column;
+      ">
+        <span id="uploadChildModalClose" style="position: absolute; top: 10px; right: 16px; font-size: 22px; cursor: pointer; color: #888;">&times;</span>
+                
+                <h5 style="margin: 0 0 12px 0; text-align: center; font-weight: 700;">JD001/1805SAMG</h5>
+                
+                
+                <!-- --- Jig Loading Responsive Form START --- -->
+                <div class="tray-scan-modal-content" style="margin-top:24px;">
+                  <div class="tray-scan-modal-header" style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 8px;">
+                    
+                    
+                  </div>
+                  <div class="tray-scan-modal-body" style="margin-top:18px;">
+                    <div class="jig-loading-form">
+                                            <!-- ...existing code... -->
+                      <form>
+                        <div class="jig-form-row" style="display: flex; flex-wrap: wrap; gap: 18px 18px;">
+                          <!-- Quantity -->
+                          <div class="jig-form-col" style="flex:1 1 220px; min-width:180px; display:flex; flex-direction:column; justify-content:center;">
+                            <label for="jigQrId" style="font-size:13px;font-weight:500; margin-bottom:4px;">Quantity</label>
+                            <input
+  type="text"
+  id="jigQrId"
+  class="form-control jig-input-border"
+  placeholder="Enter Quantity"
+  style="width:100%;margin-top:0; border:1.5px solid #f1f1f1 !important; border-radius:6px; height:36px; font-size:15px; padding-left:12px; background:#fff;"
+/>
+                          </div>
+                          <!-- Tray Type - Capacity -->
+                          <div class="jig-form-col" style="flex:1 1 220px; min-width:180px; display:flex; flex-direction:column; justify-content:center;">
+                            <label for="trayTypeCapacity" style="font-size:13px;font-weight:500; margin-bottom:4px;">Tray Type - Capacity</label>
+                            <div style="display:flex;align-items:center;">
+                              <span style="display:inline-block;width:18px;height:18px;border-radius:50%;background:#2ecc71;vertical-align:middle;margin-right:8px;"></span>
+                              <input
+  type="text"
+  id="trayTypeCapacity"
+  class="form-control jig-input-border"
+  placeholder="Normal - 16"
+  style="width:100%;margin-top:0; border:1.5px solid #f1f1f1 !important; border-radius:6px; height:36px; font-size:15px; padding-left:12px; background:#fff;"
+/>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                      <!-- ...existing code... -->
+                      <div class="jig-loading-table-wrapper" style="margin-top:18px;overflow-x:auto;">
+                        <table class="jig-loading-table" style="width:100%;border-collapse:collapse;font-size:13px; border:1px solid #bdbdbd;">
+                          <thead>
+                            <tr style="background:#f7f7f7;">
+                              <th style="padding:8px 6px;border-bottom:1px solid #bdbdbd; border-right:1px solid #bdbdbd;">S.No</th>
+                              <th style="padding:8px 6px;border-bottom:1px solid #bdbdbd; border-right:1px solid #bdbdbd;">Tray ID</th>
+                              <th style="padding:8px 6px;border-bottom:1px solid #bdbdbd;">Tray Qty</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td style="padding:6px 4px;text-align:center; border-right:1px solid #bdbdbd; border-bottom:1px solid #bdbdbd;">1</td>
+                              <td style="padding:6px 4px;text-align:center; border-right:1px solid #bdbdbd; border-bottom:1px solid #bdbdbd;">Tray001</td>
+                              <td style="padding:6px 4px;text-align:center; border-bottom:1px solid #bdbdbd;">
+                                10
+                                <img
+                                  src="{% static 'assets/icons/edit1.png' %}"
+                                  alt="Edit"
+                                  title="Edit"
+                                  style="width:16px; height:16px; margin-left:6px; vertical-align:middle; cursor:pointer;"
+                                  onmouseover="this.style.filter='brightness(0.8)';"
+                                  onmouseout="this.style.filter='';"
+                                />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding:6px 4px;text-align:center; border-right:1px solid #bdbdbd; border-bottom:1px solid #bdbdbd;">2</td>
+                              <td style="padding:6px 4px;text-align:center; border-right:1px solid #bdbdbd; border-bottom:1px solid #bdbdbd;">Tray002</td>
+                              <td style="padding:6px 4px;text-align:center; border-bottom:1px solid #bdbdbd;">12</td>
+                            </tr>
+                            <tr>
+                              <td style="padding:6px 4px;text-align:center; border-right:1px solid #bdbdbd;">3</td>
+                              <td style="padding:6px 4px;text-align:center; border-right:1px solid #bdbdbd;">Tray003</td>
+                              <td style="padding:6px 4px;text-align:center;">8</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <!-- ...existing code... -->
+                      <div class="tray-scan-modal-buttons" style="display:flex;justify-content:center;gap:10px;margin:16px 0 8px 0;">
+                        <button type="button" style="padding:8px 18px;background:#028084;color:#fff;border:none;border-radius:30px;">Add Model</button>
+                        <button type="button" style="padding:8px 18px;background:#007bff;color:#fff;border:none;border-radius:30px;">Draft</button>
+                        <button type="button" style="padding:8px 18px;background:#28a745;color:#fff;border:none;border-radius:30px;">Submit</button>
+                        <button type="button" style="padding:8px 18px;background:#dc3545;color:#fff;border:none;border-radius:30px;">Cancel</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- --- Jig Loading Responsive Form END --- -->
+        
+    `;
+    document.body.appendChild(uploadModal);
+
+    // Responsive styling
+    const style = document.createElement('style');
+    style.innerHTML = `
+      @media (max-width: 600px) {
+        #uploadChildModal > div {
+          max-width: 99vw !important;
+          width: 99vw !important;
+          margin: 10px 0 0 0 !important;
+          border-radius: 0 !important;
+        }
+      }
+    `;
+    document.head.appendChild(style);
+  }
+
+  // 2. Attach click handler to any button with text "Unload" inside #unloadModal
+  document.body.addEventListener('click', function (e) {
+    const isUnloadUploadBtn =
+      e.target.tagName === 'BUTTON' &&
+      e.target.textContent.trim().toLowerCase() === 'unload' &&
+      e.target.closest('#unloadModal');
+
+    if (isUnloadUploadBtn) {
       e.preventDefault();
-      // Call your existing function to show the unload modal.
-      // (This function should already be defined in your code.)
-      showUnloadModal();
-      
-      // Change the link text to "Loaded!" without affecting existing behavior
-      link.textContent = "Loaded!";
-      
-      // Optionally disable further click events (if desired)
-      link.style.pointerEvents = "none";
-    });
+      document.getElementById('uploadChildModal').style.display = 'flex';
+    }
   });
+
+  // 3. Close Upload Modal
+  document.getElementById('uploadChildModalClose').onclick = function () {
+    document.getElementById('uploadChildModal').style.display = 'none';
+  };
+
+  document.getElementById('uploadChildModal').addEventListener('click', function (e) {
+    if (e.target === this) this.style.display = 'none';
+  });
+
+  // 4. Cancel button handler
+  document.getElementById('uploadCancelBtn').onclick = function () {
+    document.getElementById('uploadChildModal').style.display = 'none';
+  };
 });
 </script>
+
+
+
+
 
   {% endblock %} {% endblock content %}
 </div>
